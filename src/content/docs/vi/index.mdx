@@ -1,0 +1,27 @@
+---
+title: Gen AI Impact
+description: Guidelines thực dụng về tác động của generative AI lên engineering workflow.
+template: splash
+hero:
+  tagline: Guidelines để phân biệt nơi AI tạo leverage thật, nơi con người vẫn phải giữ quyền quyết định, và nơi bottleneck chỉ chuyển sang chỗ khác.
+  actions:
+    - text: Đọc bài đầu tiên
+      link: guidelines/human-in-the-loop-ai-code-review-bottleneck/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Trọng tâm hiện tại
+
+<CardGrid>
+	<Card title="Review theo outcome" icon="magnifier">
+		Khi không thể đọc hết code do AI sinh ra, review phải chuyển sang outcome, risk boundary, và proof-of-work.
+	</Card>
+	<Card title="Automation trước human review" icon="setting">
+		Đẩy formatting, linting, parsing, screenshot, trace, benchmark, và regression checks cho máy trước khi gọi người review.
+	</Card>
+	<Card title="Workflow có thể lặp lại" icon="document">
+		Biến kinh nghiệm từ draft thành decision rules, checklist, và artifacts mà team có thể replay.
+	</Card>
+</CardGrid>

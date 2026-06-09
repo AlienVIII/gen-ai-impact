@@ -1,0 +1,17 @@
+{
+  "name": "gen-ai-impact",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "node node_modules/astro/bin/astro.mjs dev",
+    "start": "node node_modules/astro/bin/astro.mjs dev",
+    "build": "node node_modules/astro/bin/astro.mjs build",
+    "preview": "node node_modules/astro/bin/astro.mjs preview",
+    "astro": "node node_modules/astro/bin/astro.mjs"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.39.2",
+    "astro": "^6.2.2",
+    "sharp": "^0.34.5"
+  }
+}

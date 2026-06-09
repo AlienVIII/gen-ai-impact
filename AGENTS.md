@@ -1,0 +1,28 @@
+# AGENTS.md
+
+## Project Rules
+
+- This project is an Astro Starlight docs site for Gen AI Impact guidelines.
+- Keep canonical published content under `src/content/docs/`.
+- Keep Vietnamese pages under `src/content/docs/vi/` with the same slug as the English source page when possible.
+- Use root `draft.md` as the ignored current authoring scratchpad.
+- Compile draft snapshots into ignored local storage under `drafted/<topic>/<version>/`, including draft assets.
+- Publish only the latest sanitized version under `src/content/docs/**`.
+- Do not publish raw Slack threads, draft screenshots, private repo names, customer identifiers, secrets, or unsanitized logs.
+- Keep public-facing glossary, terms, privacy notes, and release docs sanitized like guideline content.
+- Use public-safe Git author metadata before publishing repository history.
+- Prefer plain Markdown for articles; use MDX only when a page needs Starlight components.
+- Update `astro.config.mjs` sidebar and translations when adding new top-level guideline pages.
+- Track public article versions in `src/content/docs/**/versions/` with release notes and diff-style summaries; rely on Git diff for line-level change history.
+- Deploy target is Cloudflare Pages at `https://gen-ai-impact.pages.dev/`.
+- Cloudflare Pages should connect to GitHub repo `AlienVIII/gen-ai-impact`, use build command `npm run build`, output directory `dist`, production branch `main`, and Node `24`.
+- Pull requests should produce Cloudflare Preview Deployments; merges/pushes to `main` should deploy Production.
+- GitHub Pages is no-cost only for public repositories on GitHub Free. For a private repo with no-cost hosting, keep Cloudflare Pages as the default.
+- Avoid root-absolute internal links such as `/vi/...`; use relative links so deploy targets with or without subpaths stay valid.
+- Before claiming completion, run `npm run build`.
+
+## Commands
+
+- `npm run dev`: local development server.
+- `npm run build`: production build and content validation.
+- `npm run preview`: preview built output locally.
