@@ -1,8 +1,6 @@
 /**
  * Centralized Theme Configuration
  * Earthbound Warmth
- *
- * Update tokens here to change the entire site appearance.
  */
 
 :root {
@@ -30,7 +28,7 @@
 	--color-link: #8f5f3f;
 	--color-link-hover: #6f472f;
 
-	/* Interactive states */
+	/* Interactive */
 	--color-hover: #ead8bd;
 	--color-active: #dfc6a8;
 	--color-focus: #9f6846;
@@ -40,13 +38,14 @@
 	--color-accent-soft: #d9b08c;
 	--color-accent-dark: #7a4f34;
 
-	/* Buttons */
+	/* Primary CTA Button */
 	--color-button-primary-background: #7a4f34;
 	--color-button-primary-background-hover: #6f472f;
 	--color-button-primary-background-active: #5d3a26;
 	--color-button-primary-text: #fff7e8;
 	--color-button-primary-border: #7a4f34;
 
+	/* Secondary Button */
 	--color-button-secondary-background: #fff7e8;
 	--color-button-secondary-background-hover: #eadfc7;
 	--color-button-secondary-text: #4a3f36;
@@ -75,7 +74,6 @@
 	--color-code-background: #eadfc7;
 	--color-code-text: #3b312a;
 	--color-code-border: #d6c3a6;
-
 	--color-inline-code-background: #ead8bd;
 	--color-inline-code-text: #6f472f;
 
@@ -87,13 +85,10 @@
 	/* Status */
 	--color-info: #6f7f8f;
 	--color-info-background: #e5edf0;
-
 	--color-success: #6f7d55;
 	--color-success-background: #e8ecd8;
-
 	--color-warning: #b47a3c;
 	--color-warning-background: #f1dfbd;
-
 	--color-danger: #a85f4f;
 	--color-danger-background: #f0d8d1;
 
@@ -112,7 +107,6 @@
 	--shadow-md: 0 8px 24px rgba(74, 63, 54, 0.08);
 }
 
-/* Dark theme */
 :root[data-theme='dark'] {
 	/* Brand */
 	--color-background: #211915;
@@ -138,7 +132,7 @@
 	--color-link: #e0b991;
 	--color-link-hover: #f0cda8;
 
-	/* Interactive states */
+	/* Interactive */
 	--color-hover: #3a2c24;
 	--color-active: #4a382e;
 	--color-focus: #d9b08c;
@@ -148,13 +142,14 @@
 	--color-accent-soft: #c18a63;
 	--color-accent-dark: #f0cda8;
 
-	/* Buttons */
-	--color-button-primary-background: #d9b08c;
-	--color-button-primary-background-hover: #e0bd9b;
-	--color-button-primary-background-active: #c18a63;
-	--color-button-primary-text: #2b211b;
-	--color-button-primary-border: #d9b08c;
+	/* Primary CTA Button */
+	--color-button-primary-background: #f0cda8;
+	--color-button-primary-background-hover: #ffe0bd;
+	--color-button-primary-background-active: #d9b08c;
+	--color-button-primary-text: #211915;
+	--color-button-primary-border: #f0cda8;
 
+	/* Secondary Button */
 	--color-button-secondary-background: #2b211b;
 	--color-button-secondary-background-hover: #382b24;
 	--color-button-secondary-text: #f4ebd2;
@@ -183,7 +178,6 @@
 	--color-code-background: #181210;
 	--color-code-text: #f4ebd2;
 	--color-code-border: #46362d;
-
 	--color-inline-code-background: #3a2c24;
 	--color-inline-code-text: #f0cda8;
 
@@ -195,13 +189,10 @@
 	/* Status */
 	--color-info: #a6c0cf;
 	--color-info-background: #1f3038;
-
 	--color-success: #bacb8f;
 	--color-success-background: #27311f;
-
 	--color-warning: #e1b36f;
 	--color-warning-background: #3d2c16;
-
 	--color-danger: #e7a295;
 	--color-danger-background: #3a211c;
 

@@ -25,10 +25,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	color: var(--color-text);
-}
-
+h6,
 p,
 li {
 	color: var(--color-text);
@@ -46,55 +43,94 @@ a:hover {
 	text-decoration-color: currentColor;
 }
 
-/* Buttons: Starlight primary CTA */
+/* Primary CTA / Hero button
+   Starlight may render CTA as .sl-button, .sl-link-button, or plain anchor with classes.
+   Keep this specific and force child text/icon to inherit.
+*/
 .sl-button,
-a.sl-button {
-	border: 1px solid var(--color-button-primary-border);
-	background: var(--color-button-primary-background);
-	color: var(--color-button-primary-text);
+.sl-link-button,
+a.sl-button,
+a.sl-link-button,
+.hero a[class*='button'],
+.hero a[class*='Button'],
+main a[class*='button'],
+main a[class*='Button'] {
+	border: 1px solid var(--color-button-primary-border) !important;
+	background: var(--color-button-primary-background) !important;
+	color: var(--color-button-primary-text) !important;
 	box-shadow: var(--shadow-sm);
+	text-decoration: none;
 }
 
 .sl-button:hover,
-a.sl-button:hover {
-	border-color: var(--color-button-primary-background-hover);
-	background: var(--color-button-primary-background-hover);
-	color: var(--color-button-primary-text);
+.sl-link-button:hover,
+a.sl-button:hover,
+a.sl-link-button:hover,
+.hero a[class*='button']:hover,
+.hero a[class*='Button']:hover,
+main a[class*='button']:hover,
+main a[class*='Button']:hover {
+	border-color: var(--color-button-primary-background-hover) !important;
+	background: var(--color-button-primary-background-hover) !important;
+	color: var(--color-button-primary-text) !important;
 }
 
 .sl-button:active,
-a.sl-button:active {
-	border-color: var(--color-button-primary-background-active);
-	background: var(--color-button-primary-background-active);
-	color: var(--color-button-primary-text);
+.sl-link-button:active,
+a.sl-button:active,
+a.sl-link-button:active,
+.hero a[class*='button']:active,
+.hero a[class*='Button']:active,
+main a[class*='button']:active,
+main a[class*='Button']:active {
+	border-color: var(--color-button-primary-background-active) !important;
+	background: var(--color-button-primary-background-active) !important;
+	color: var(--color-button-primary-text) !important;
 }
 
-/* Button text/icon should inherit the high-contrast text token */
+/* Critical: fix faded text/icon inside CTA */
 .sl-button *,
-a.sl-button * {
-	color: inherit;
+.sl-link-button *,
+a.sl-button *,
+a.sl-link-button *,
+.hero a[class*='button'] *,
+.hero a[class*='Button'] *,
+main a[class*='button'] *,
+main a[class*='Button'] * {
+	color: currentColor !important;
+	fill: currentColor !important;
+	stroke: currentColor !important;
+	opacity: 1 !important;
 }
 
-/* Starlight secondary button */
+/* Secondary button */
 .sl-button.secondary,
+.sl-link-button.secondary,
 a.sl-button.secondary,
+a.sl-link-button.secondary,
 .sl-button[data-variant='secondary'],
-a.sl-button[data-variant='secondary'] {
-	border-color: var(--color-button-secondary-border);
-	background: var(--color-button-secondary-background);
-	color: var(--color-button-secondary-text);
+.sl-link-button[data-variant='secondary'],
+a.sl-button[data-variant='secondary'],
+a.sl-link-button[data-variant='secondary'] {
+	border-color: var(--color-button-secondary-border) !important;
+	background: var(--color-button-secondary-background) !important;
+	color: var(--color-button-secondary-text) !important;
 }
 
 .sl-button.secondary:hover,
+.sl-link-button.secondary:hover,
 a.sl-button.secondary:hover,
+a.sl-link-button.secondary:hover,
 .sl-button[data-variant='secondary']:hover,
-a.sl-button[data-variant='secondary']:hover {
-	background: var(--color-button-secondary-background-hover);
-	color: var(--color-button-secondary-text);
+.sl-link-button[data-variant='secondary']:hover,
+a.sl-button[data-variant='secondary']:hover,
+a.sl-link-button[data-variant='secondary']:hover {
+	background: var(--color-button-secondary-background-hover) !important;
+	color: var(--color-button-secondary-text) !important;
 }
 
 /* Do not force every native button into brand CTA style */
-button:not(.sl-button):not(.sl-search-button):not([data-pagefind-ui='search-clear']) {
+button:not(.sl-button):not(.sl-link-button):not(.sl-search-button):not([data-pagefind-ui='search-clear']) {
 	color: inherit;
 }
 
@@ -119,6 +155,11 @@ button.sl-search-button:hover {
 	border-color: var(--color-border-accent);
 	background: var(--color-surface-elevated);
 	color: var(--color-search-text);
+}
+
+.sl-search-button *,
+button.sl-search-button * {
+	color: inherit;
 }
 
 .sl-search-button kbd {
