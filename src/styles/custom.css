@@ -1,0 +1,237 @@
+/**
+ * Custom Starlight Styles
+ * Uses centralized theme tokens from theme.css
+ */
+
+@import './theme.css';
+
+:root {
+	color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+	color-scheme: dark;
+}
+
+/* Base */
+body {
+	background: var(--color-background);
+	color: var(--color-text);
+}
+
+/* Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-text);
+}
+
+p,
+li {
+	color: var(--color-text);
+}
+
+/* Links */
+a {
+	color: var(--color-link);
+	text-decoration-color: var(--color-accent-light);
+	text-underline-offset: 0.18em;
+}
+
+a:hover {
+	color: var(--color-link-hover);
+	text-decoration-color: currentColor;
+}
+
+/* Buttons: Starlight primary CTA */
+.sl-button,
+a.sl-button {
+	border: 1px solid var(--color-button-primary-border);
+	background: var(--color-button-primary-background);
+	color: var(--color-button-primary-text);
+	box-shadow: var(--shadow-sm);
+}
+
+.sl-button:hover,
+a.sl-button:hover {
+	border-color: var(--color-button-primary-background-hover);
+	background: var(--color-button-primary-background-hover);
+	color: var(--color-button-primary-text);
+}
+
+.sl-button:active,
+a.sl-button:active {
+	border-color: var(--color-button-primary-background-active);
+	background: var(--color-button-primary-background-active);
+	color: var(--color-button-primary-text);
+}
+
+/* Button text/icon should inherit the high-contrast text token */
+.sl-button *,
+a.sl-button * {
+	color: inherit;
+}
+
+/* Starlight secondary button */
+.sl-button.secondary,
+a.sl-button.secondary,
+.sl-button[data-variant='secondary'],
+a.sl-button[data-variant='secondary'] {
+	border-color: var(--color-button-secondary-border);
+	background: var(--color-button-secondary-background);
+	color: var(--color-button-secondary-text);
+}
+
+.sl-button.secondary:hover,
+a.sl-button.secondary:hover,
+.sl-button[data-variant='secondary']:hover,
+a.sl-button[data-variant='secondary']:hover {
+	background: var(--color-button-secondary-background-hover);
+	color: var(--color-button-secondary-text);
+}
+
+/* Do not force every native button into brand CTA style */
+button:not(.sl-button):not(.sl-search-button):not([data-pagefind-ui='search-clear']) {
+	color: inherit;
+}
+
+/* Focus */
+:focus-visible {
+	outline: 2px solid var(--color-focus);
+	outline-offset: 2px;
+}
+
+/* Search */
+.sl-search-button,
+button.sl-search-button {
+	border: 1px solid var(--color-search-border);
+	border-radius: var(--radius-md);
+	background: var(--color-search-background);
+	color: var(--color-search-text);
+	box-shadow: var(--shadow-sm);
+}
+
+.sl-search-button:hover,
+button.sl-search-button:hover {
+	border-color: var(--color-border-accent);
+	background: var(--color-surface-elevated);
+	color: var(--color-search-text);
+}
+
+.sl-search-button kbd {
+	border: 1px solid var(--color-border-muted);
+	background: var(--color-search-kbd-background);
+	color: var(--color-search-kbd-text);
+}
+
+/* Starlight search modal / Pagefind UI */
+.pagefind-ui,
+[data-pagefind-ui] {
+	--pagefind-ui-primary: var(--color-accent-dark);
+	--pagefind-ui-text: var(--color-text);
+	--pagefind-ui-background: var(--color-surface);
+	--pagefind-ui-border: var(--color-border);
+	--pagefind-ui-tag: var(--color-surface-muted);
+	--pagefind-ui-border-width: 1px;
+	--pagefind-ui-border-radius: 10px;
+}
+
+/* Code */
+pre,
+.astro-code {
+	border: 1px solid var(--color-code-border);
+	background: var(--color-code-background);
+	color: var(--color-code-text);
+}
+
+:not(pre) > code {
+	border: 1px solid var(--color-code-border);
+	border-radius: var(--radius-sm);
+	background: var(--color-inline-code-background);
+	color: var(--color-inline-code-text);
+	padding: 0.12em 0.35em;
+}
+
+/* Cards */
+.sl-card,
+.card {
+	border-color: var(--color-card-border);
+	background: var(--color-card-background);
+	box-shadow: var(--shadow-sm);
+}
+
+/* Tables */
+table {
+	border-color: var(--color-border);
+}
+
+thead {
+	background: var(--color-table-header-background);
+}
+
+tr {
+	border-color: var(--color-table-row-border);
+}
+
+tbody tr:hover {
+	background: var(--color-table-row-hover);
+}
+
+/* Borders and dividers */
+hr {
+	border-color: var(--color-border);
+}
+
+/* Sidebar / navigation */
+.sidebar,
+[aria-label='Main navigation'] {
+	background: var(--color-sidebar-background);
+	color: var(--color-sidebar-text);
+}
+
+.sidebar a,
+[aria-label='Main navigation'] a {
+	color: var(--color-sidebar-text-muted);
+}
+
+.sidebar a:hover,
+[aria-label='Main navigation'] a:hover {
+	color: var(--color-sidebar-active-text);
+}
+
+.sidebar a[aria-current='page'],
+[aria-label='Main navigation'] a[aria-current='page'] {
+	background: var(--color-sidebar-active-background);
+	color: var(--color-sidebar-active-text);
+}
+
+/* Callouts / asides */
+.starlight-aside {
+	border-color: var(--color-border);
+	background: var(--color-surface);
+}
+
+.starlight-aside--note {
+	background: var(--color-info-background);
+}
+
+.starlight-aside--tip {
+	background: var(--color-success-background);
+}
+
+.starlight-aside--caution {
+	background: var(--color-warning-background);
+}
+
+.starlight-aside--danger {
+	background: var(--color-danger-background);
+}
+
+/* Selection */
+::selection {
+	background: var(--color-selection);
+	color: var(--color-text);
+}

@@ -25,4 +25,4 @@ Guidelines may link to external sites. Those sites have their own privacy practi
 
 ## Drafts And Source Material
 
-Raw drafts, screenshots, private notes, Slack threads, internal repository names, secrets, and unsanitized logs are not intended for publication. Only sanitized Markdown under `src/content/docs/**` should be published.
+Raw drafts, screenshots, private notes, threads, internal repository names, secrets, and unsanitized logs are not intended for publication. Only sanitized Markdown under `src/content/docs/**` should be published.

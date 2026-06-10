@@ -8,6 +8,29 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Gen AI Impact',
+			logo: {
+				src: './src/assets/logo.svg',
+				replacesTitle: true,
+			},
+			customCss: ['./src/styles/custom.css'],
+			head: [
+				{
+					tag: 'script',
+					content: `
+(function () {
+  var frames = ['/favicon-prompt.svg', '/favicon-cursor.svg'];
+  var i = 0;
+  setInterval(function () {
+    var link = document.querySelector("link[rel~='icon']") || document.createElement('link');
+    link.rel = 'icon';
+    link.href = frames[i % frames.length];
+    document.head.appendChild(link);
+    i += 1;
+  }, 700);
+})();
+					`.trim(),
+				},
+			],
 			defaultLocale: 'root',
 			locales: {
 				root: {

@@ -25,4 +25,4 @@ Guideline có thể link tới external sites. Các site đó có privacy practi
 
 ## Drafts Và Source Material
 
-Raw drafts, screenshots, private notes, Slack threads, internal repository names, secrets, và unsanitized logs không được publish. Chỉ sanitized Markdown dưới `src/content/docs/**` được public.
+Raw drafts, screenshots, private notes, threads, internal repository names, secrets, và unsanitized logs không được publish. Chỉ sanitized Markdown dưới `src/content/docs/**` được public.

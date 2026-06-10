@@ -8,7 +8,7 @@
 - Use root `draft.md` as the ignored current authoring scratchpad.
 - Compile draft snapshots into ignored local storage under `drafted/<topic>/<version>/`, including draft assets.
 - Publish only the latest sanitized version under `src/content/docs/**`.
-- Do not publish raw Slack threads, draft screenshots, private repo names, customer identifiers, secrets, or unsanitized logs.
+- Do not publish raw threads, draft screenshots, private repo names, customer identifiers, secrets, or unsanitized logs.
 - Keep public-facing glossary, terms, privacy notes, and release docs sanitized like guideline content.
 - Use public-safe Git author metadata before publishing repository history.
 - Prefer plain Markdown for articles; use MDX only when a page needs Starlight components.

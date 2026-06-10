@@ -1,0 +1,238 @@
+/**
+ * Centralized Theme Configuration
+ * Earthbound Warmth
+ *
+ * Update tokens here to change the entire site appearance.
+ */
+
+:root {
+	/* Brand */
+	--color-background: #f4ebd2;
+	--color-text: #4a3f36;
+	--color-accent: #c18a63;
+
+	/* Surfaces */
+	--color-surface: #fff7e8;
+	--color-surface-muted: #eadfc7;
+	--color-surface-elevated: #fffaf0;
+
+	/* Text */
+	--color-text-secondary: #6f6257;
+	--color-text-tertiary: #8b7b6d;
+	--color-text-inverse: #fff7e8;
+
+	/* Borders */
+	--color-border: #dcc8ad;
+	--color-border-muted: #e8dbc6;
+	--color-border-accent: #c18a63;
+
+	/* Links */
+	--color-link: #8f5f3f;
+	--color-link-hover: #6f472f;
+
+	/* Interactive states */
+	--color-hover: #ead8bd;
+	--color-active: #dfc6a8;
+	--color-focus: #9f6846;
+
+	/* Accent scale */
+	--color-accent-light: #ead8bd;
+	--color-accent-soft: #d9b08c;
+	--color-accent-dark: #7a4f34;
+
+	/* Buttons */
+	--color-button-primary-background: #7a4f34;
+	--color-button-primary-background-hover: #6f472f;
+	--color-button-primary-background-active: #5d3a26;
+	--color-button-primary-text: #fff7e8;
+	--color-button-primary-border: #7a4f34;
+
+	--color-button-secondary-background: #fff7e8;
+	--color-button-secondary-background-hover: #eadfc7;
+	--color-button-secondary-text: #4a3f36;
+	--color-button-secondary-border: #dcc8ad;
+
+	/* Sidebar */
+	--color-sidebar-background: #efe2c9;
+	--color-sidebar-text: #4a3f36;
+	--color-sidebar-text-muted: #7c6e62;
+	--color-sidebar-active-background: #dcc8ad;
+	--color-sidebar-active-text: #3b312a;
+
+	/* Search */
+	--color-search-background: #fff7e8;
+	--color-search-border: #dcc8ad;
+	--color-search-text: #4a3f36;
+	--color-search-placeholder: #7c6e62;
+	--color-search-kbd-background: #eadfc7;
+	--color-search-kbd-text: #4a3f36;
+
+	/* Cards */
+	--color-card-background: #fff7e8;
+	--color-card-border: #dcc8ad;
+
+	/* Code */
+	--color-code-background: #eadfc7;
+	--color-code-text: #3b312a;
+	--color-code-border: #d6c3a6;
+
+	--color-inline-code-background: #ead8bd;
+	--color-inline-code-text: #6f472f;
+
+	/* Tables */
+	--color-table-header-background: #eadfc7;
+	--color-table-row-border: #dcc8ad;
+	--color-table-row-hover: #fff7e8;
+
+	/* Status */
+	--color-info: #6f7f8f;
+	--color-info-background: #e5edf0;
+
+	--color-success: #6f7d55;
+	--color-success-background: #e8ecd8;
+
+	--color-warning: #b47a3c;
+	--color-warning-background: #f1dfbd;
+
+	--color-danger: #a85f4f;
+	--color-danger-background: #f0d8d1;
+
+	/* Misc */
+	--color-selection: #dfc6a8;
+	--color-overlay: rgba(74, 63, 54, 0.16);
+
+	/* Radius */
+	--radius-sm: 6px;
+	--radius-md: 10px;
+	--radius-lg: 16px;
+	--radius-pill: 999px;
+
+	/* Shadow */
+	--shadow-sm: 0 1px 2px rgba(74, 63, 54, 0.06);
+	--shadow-md: 0 8px 24px rgba(74, 63, 54, 0.08);
+}
+
+/* Dark theme */
+:root[data-theme='dark'] {
+	/* Brand */
+	--color-background: #211915;
+	--color-text: #f4ebd2;
+	--color-accent: #d9b08c;
+
+	/* Surfaces */
+	--color-surface: #2b211b;
+	--color-surface-muted: #382b24;
+	--color-surface-elevated: #332720;
+
+	/* Text */
+	--color-text-secondary: #d8c8b4;
+	--color-text-tertiary: #b9a894;
+	--color-text-inverse: #2b211b;
+
+	/* Borders */
+	--color-border: #5a4638;
+	--color-border-muted: #46362d;
+	--color-border-accent: #d9b08c;
+
+	/* Links */
+	--color-link: #e0b991;
+	--color-link-hover: #f0cda8;
+
+	/* Interactive states */
+	--color-hover: #3a2c24;
+	--color-active: #4a382e;
+	--color-focus: #d9b08c;
+
+	/* Accent scale */
+	--color-accent-light: #4a382e;
+	--color-accent-soft: #c18a63;
+	--color-accent-dark: #f0cda8;
+
+	/* Buttons */
+	--color-button-primary-background: #d9b08c;
+	--color-button-primary-background-hover: #e0bd9b;
+	--color-button-primary-background-active: #c18a63;
+	--color-button-primary-text: #2b211b;
+	--color-button-primary-border: #d9b08c;
+
+	--color-button-secondary-background: #2b211b;
+	--color-button-secondary-background-hover: #382b24;
+	--color-button-secondary-text: #f4ebd2;
+	--color-button-secondary-border: #5a4638;
+
+	/* Sidebar */
+	--color-sidebar-background: #241b17;
+	--color-sidebar-text: #f4ebd2;
+	--color-sidebar-text-muted: #cbb8a2;
+	--color-sidebar-active-background: #3a2c24;
+	--color-sidebar-active-text: #fff7e8;
+
+	/* Search */
+	--color-search-background: #2b211b;
+	--color-search-border: #5a4638;
+	--color-search-text: #f4ebd2;
+	--color-search-placeholder: #cbb8a2;
+	--color-search-kbd-background: #382b24;
+	--color-search-kbd-text: #f4ebd2;
+
+	/* Cards */
+	--color-card-background: #2b211b;
+	--color-card-border: #5a4638;
+
+	/* Code */
+	--color-code-background: #181210;
+	--color-code-text: #f4ebd2;
+	--color-code-border: #46362d;
+
+	--color-inline-code-background: #3a2c24;
+	--color-inline-code-text: #f0cda8;
+
+	/* Tables */
+	--color-table-header-background: #382b24;
+	--color-table-row-border: #46362d;
+	--color-table-row-hover: #2b211b;
+
+	/* Status */
+	--color-info: #a6c0cf;
+	--color-info-background: #1f3038;
+
+	--color-success: #bacb8f;
+	--color-success-background: #27311f;
+
+	--color-warning: #e1b36f;
+	--color-warning-background: #3d2c16;
+
+	--color-danger: #e7a295;
+	--color-danger-background: #3a211c;
+
+	/* Misc */
+	--color-selection: #5a4638;
+	--color-overlay: rgba(0, 0, 0, 0.36);
+
+	/* Shadow */
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.24);
+	--shadow-md: 0 8px 24px rgba(0, 0, 0, 0.32);
+}
+
+/* Starlight token mapping */
+:root {
+	--sl-color-bg-page: var(--color-background);
+	--sl-color-bg-sidebar: var(--color-sidebar-background);
+	--sl-color-bg-nav: var(--color-surface);
+
+	--sl-color-text: var(--color-text);
+	--sl-color-text-accent: var(--color-accent-dark);
+
+	--sl-color-accent: var(--color-accent);
+	--sl-color-accent-high: var(--color-accent-dark);
+	--sl-color-accent-low: var(--color-accent-light);
+
+	--sl-color-hairline: var(--color-border);
+
+	--sl-color-gray-1: var(--color-text);
+	--sl-color-gray-2: var(--color-text-secondary);
+	--sl-color-gray-3: var(--color-text-tertiary);
+	--sl-color-gray-4: var(--color-border);
+	--sl-color-gray-5: var(--color-surface-muted);
+	--sl-color-gray-6: var(--color-surface);
+}

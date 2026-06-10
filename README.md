@@ -17,7 +17,7 @@ Built with [Astro Starlight](https://starlight.astro.build/).
 
 ## Public Safety
 
-- Do not publish raw Slack threads, draft screenshots, private repo names, customer identifiers, secrets, or unsanitized logs.
+- Do not publish raw threads, draft screenshots, private repo names, customer identifiers, secrets, or unsanitized logs.
 - `draft.md`, `drafted/`, and root-level `image*.png` files are ignored by Git by default.
 - Run `npm run build` before publishing.
 
