@@ -204,8 +204,4 @@ Câu hỏi đáng thảo luận tiếp:
 - Critical path nào vẫn bắt buộc human review 100%?
 - Môi trường nào còn manual khiến agent không thể tự prove work?
 
-## Phiên bản
-
-Public version hiện tại: [v0.1 public draft](../../versions/human-in-the-loop-ai-code-review-bottleneck/).
-
 Cảm ơn và trích nguồn từ anh Gopher và các thành viên webuild.

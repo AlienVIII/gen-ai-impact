@@ -1,13 +1,13 @@
 ---
 title: "Glossary"
-description: Terms used across Gen AI Impact guidelines.
+description: Terms used across Gen AI Impact topics.
 ---
 
-This glossary keeps recurring terms consistent across guidelines.
+This glossary keeps recurring terms consistent across topics.
 
 ## AI Coding Agent
 
-A tool that can plan, edit, run commands, and verify code changes with some degree of autonomy. In these guidelines, an agent is treated as an assistant inside a controlled engineering workflow, not as the accountable owner.
+A tool that can plan, edit, run commands, and verify code changes with some degree of autonomy. In these topics, an agent is treated as an assistant inside a controlled engineering workflow, not as the accountable owner.
 
 ## Artifact
 

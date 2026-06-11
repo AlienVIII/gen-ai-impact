@@ -204,8 +204,4 @@ Questions worth discussing:
 - Which critical paths still require 100% human review?
 - Which environment is still manual and prevents the agent from proving its work?
 
-## Version
-
-Current public version: [v0.1 public draft](../../versions/human-in-the-loop-ai-code-review-bottleneck/).
-
 Thanks and source attribution to Gopher and the webuild members.

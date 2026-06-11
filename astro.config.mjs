@@ -44,24 +44,24 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guidelines',
-					translations: { vi: 'Hướng dẫn' },
+					label: 'Topics',
+					translations: { vi: 'Topic' },
 					items: [
 						{
 							label: 'Human-in-the-loop: The AI Code Review Bottleneck',
 							translations: { vi: 'Human-in-the-loop: Nghẽn cổ chai trong AI code review' },
-							slug: 'guidelines/human-in-the-loop-ai-code-review-bottleneck',
+							slug: 'topics/human-in-the-loop-ai-code-review-bottleneck',
 						},
 					],
 				},
 				{
-					label: 'Versions',
-					translations: { vi: 'Phiên bản' },
+					label: 'Contents',
+					translations: { vi: 'Mục lục' },
 					items: [
 						{
-							label: 'Human-in-the-loop',
-							translations: { vi: 'Human-in-the-loop' },
-							slug: 'versions/human-in-the-loop-ai-code-review-bottleneck',
+							label: 'All topics',
+							translations: { vi: 'Tất cả topic' },
+							slug: 'contents',
 						},
 					],
 				},

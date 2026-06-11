@@ -3,7 +3,7 @@ title: "Privacy"
 description: Privacy notes for the Gen AI Impact public site.
 ---
 
-Last updated: 2026-06-09
+Last updated: 2026-06-11
 
 Gen AI Impact is a static documentation site. It does not provide accounts, comments, forms, or user-submitted content.
 
@@ -21,7 +21,7 @@ If analytics, embedded media, comments, newsletter forms, or third-party widgets
 
 ## External Links
 
-Guidelines may link to external sites. Those sites have their own privacy practices and are outside this site's control.
+Topics may link to external sites. Those sites have their own privacy practices and are outside this site's control.
 
 ## Drafts And Source Material
 

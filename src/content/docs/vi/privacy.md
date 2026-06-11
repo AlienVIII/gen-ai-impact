@@ -3,7 +3,7 @@ title: "Quyền riêng tư"
 description: Ghi chú privacy cho public site Gen AI Impact.
 ---
 
-Cập nhật lần cuối: 2026-06-09
+Cập nhật lần cuối: 2026-06-11
 
 Gen AI Impact là static documentation site. Site không có account, comment, form, hoặc user-submitted content.
 
@@ -21,7 +21,7 @@ Nếu sau này thêm analytics, embedded media, comments, newsletter form, hoặ
 
 ## External Links
 
-Guideline có thể link tới external sites. Các site đó có privacy practice riêng và nằm ngoài quyền kiểm soát của site này.
+Topic có thể link tới external sites. Các site đó có privacy practice riêng và nằm ngoài quyền kiểm soát của site này.
 
 ## Drafts Và Source Material
 

@@ -1,6 +1,6 @@
 # Gen AI Impact
 
-Guideline documentation site for generative AI impact notes and operating rules.
+Topic documentation site for generative AI impact notes and operating rules.
 
 Built with [Astro Starlight](https://starlight.astro.build/).
 
@@ -10,7 +10,8 @@ Built with [Astro Starlight](https://starlight.astro.build/).
 - Compile each draft snapshot into ignored local storage under `drafted/<topic>/<version>/`, including draft assets.
 - Publish only the latest sanitized version under `src/content/docs/`.
 - Publish Vietnamese translations under the same path in `src/content/docs/vi/`.
-- Track public article versions in `src/content/docs/**/versions/` with release notes and diff-style summaries.
+- Keep public table-of-contents pages under `src/content/docs/**/contents.md`.
+- Keep internal draft/history notes outside `src/content/docs/` so they are not published by Starlight.
 - Keep public reference pages such as glossary, terms, and privacy notes under `src/content/docs/`.
 - Use Git diff for line-level history of published Markdown.
 - Update `astro.config.mjs` when adding top-level navigation entries.
@@ -20,6 +21,12 @@ Built with [Astro Starlight](https://starlight.astro.build/).
 - Do not publish raw threads, draft screenshots, private repo names, customer identifiers, secrets, or unsanitized logs.
 - `draft.md`, `drafted/`, and root-level `image*.png` files are ignored by Git by default.
 - Run `npm run build` before publishing.
+
+## Rights And Reuse
+
+- No open-source license is granted by default.
+- Public site content is available for reading and reference under the public Terms page.
+- Add an explicit `LICENSE` file before treating this repository as open source.
 
 ## Deploy
 

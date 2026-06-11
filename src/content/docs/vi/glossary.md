@@ -1,13 +1,13 @@
 ---
 title: "Thuật ngữ"
-description: Các thuật ngữ dùng trong Gen AI Impact guidelines.
+description: Các thuật ngữ dùng trong Gen AI Impact topics.
 ---
 
-Trang này giữ cách dùng thuật ngữ nhất quán giữa các guideline.
+Trang này giữ cách dùng thuật ngữ nhất quán giữa các topic.
 
 ## AI Coding Agent
 
-Công cụ có thể plan, edit, chạy command, và verify code change với một mức tự chủ nhất định. Trong guideline này, agent là assistant trong workflow engineering có kiểm soát, không phải accountable owner.
+Công cụ có thể plan, edit, chạy command, và verify code change với một mức tự chủ nhất định. Trong các topic này, agent là assistant trong workflow engineering có kiểm soát, không phải accountable owner.
 
 ## Artifact
 

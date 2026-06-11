@@ -1,9 +1,9 @@
 ---
-title: "Phiên bản: Human-in-the-loop"
-description: Lịch sử public version, release note, và diff-style summary của guideline Human-in-the-loop.
+title: "Internal History: Human-in-the-loop"
+description: Internal release note và diff-style summary của topic Human-in-the-loop.
 ---
 
-Trang này track các bản public của guideline theo kiểu blog release note. Raw drafts và draft assets chỉ nằm local. Chỉ latest sanitized page dưới `src/content/docs/**` được public.
+Trang internal này track quyết định từ draft sang public version. File nằm ngoài `src/content/docs/` nên không được Starlight publish.
 
 Mỗi public version nên có ba phần:
 
@@ -17,7 +17,7 @@ Ngày: 2026-06-08
 
 Latest public page:
 
-- `/vi/guidelines/human-in-the-loop-ai-code-review-bottleneck/`
+- `/vi/topics/human-in-the-loop-ai-code-review-bottleneck/`
 
 Source note: bản này được synthesize từ local draft snapshot không public. Raw draft text và draft assets không được publish.
 
@@ -41,18 +41,18 @@ Diff-style summary so với bản trước:
 
 ## Cách track bằng Git diff
 
-Public page này cho người đọc summary trước. Khi cần audit line-level, dùng Git để xem thay đổi thật giữa các public versions:
+Khi cần audit line-level, dùng Git để xem thay đổi thật giữa các public versions:
 
 ```bash
-git log --follow -- src/content/docs/vi/guidelines/human-in-the-loop-ai-code-review-bottleneck.md
-git diff <old-commit>..<new-commit> -- src/content/docs/vi/guidelines/human-in-the-loop-ai-code-review-bottleneck.md
+git log --follow -- src/content/docs/vi/topics/human-in-the-loop-ai-code-review-bottleneck.md
+git diff <old-commit>..<new-commit> -- src/content/docs/vi/topics/human-in-the-loop-ai-code-review-bottleneck.md
 ```
 
 Cho bản English:
 
 ```bash
-git log --follow -- src/content/docs/guidelines/human-in-the-loop-ai-code-review-bottleneck.md
-git diff <old-commit>..<new-commit> -- src/content/docs/guidelines/human-in-the-loop-ai-code-review-bottleneck.md
+git log --follow -- src/content/docs/topics/human-in-the-loop-ai-code-review-bottleneck.md
+git diff <old-commit>..<new-commit> -- src/content/docs/topics/human-in-the-loop-ai-code-review-bottleneck.md
 ```
 
 ## Template cho version tiếp theo

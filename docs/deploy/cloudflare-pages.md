@@ -31,6 +31,7 @@ Official references:
 
 - Pull request: Cloudflare creates a Preview Deployment.
 - Merge or push to `main`: Cloudflare builds and deploys Production.
+- Preview Deployment URLs are public by default. Do not include draft-only or confidential content in pull requests; if preview access must be restricted, enable Cloudflare Access for preview deployments.
 
 No GitHub Actions workflow is required for production deploys when using the Cloudflare Git integration.
 
@@ -109,15 +110,16 @@ Use `--force-with-lease`, not plain `--force`.
 After Cloudflare finishes the first build:
 
 1. Open `https://gen-ai-impact.pages.dev/`.
-2. Open `/vi/guidelines/human-in-the-loop-ai-code-review-bottleneck/`.
-3. Open `/guidelines/human-in-the-loop-ai-code-review-bottleneck/`.
-4. Open `/vi/versions/human-in-the-loop-ai-code-review-bottleneck/`.
+2. Open `/vi/topics/human-in-the-loop-ai-code-review-bottleneck/`.
+3. Open `/topics/human-in-the-loop-ai-code-review-bottleneck/`.
+4. Open `/vi/contents/`.
 5. Check that search works and no draft-only paths are visible.
 
 ### 7. Future CI/CD Behavior
 
 - Open a pull request: Cloudflare creates a preview URL and GitHub check.
 - Merge to `main`: Cloudflare deploys production.
+- Treat preview URLs as public unless Cloudflare Access is enabled for previews.
 - If a commit should not deploy, use Cloudflare's supported skip marker such as `[CF-Pages-Skip]` in the commit message.
 
 ## Local Validation

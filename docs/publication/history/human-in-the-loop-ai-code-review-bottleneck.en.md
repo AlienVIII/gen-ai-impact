@@ -1,14 +1,14 @@
 ---
-title: "Versions: Human-in-the-loop"
-description: Public version history, release notes, and diff-style summaries for the Human-in-the-loop guideline.
+title: "Internal History: Human-in-the-loop"
+description: Internal release notes and diff-style summaries for the Human-in-the-loop topic.
 ---
 
-This page tracks public revisions of the guideline as release notes. Raw drafts and draft assets stay local-only. Only the latest sanitized page under `src/content/docs/**` is public.
+This internal note tracks draft-to-public revision decisions. It is intentionally outside `src/content/docs/` and is not published by Starlight.
 
 Each public version should include:
 
 - A short release note.
-- A diff-style summary so readers can see what changed without opening Git.
+- A diff-style summary for internal review.
 - A source note when the version was synthesized from non-public local drafts.
 
 ## v0.1 public draft
@@ -17,7 +17,7 @@ Date: 2026-06-08
 
 Latest public page:
 
-- `/vi/guidelines/human-in-the-loop-ai-code-review-bottleneck/`
+- `/vi/topics/human-in-the-loop-ai-code-review-bottleneck/`
 
 Source note: synthesized from a non-public local draft snapshot. Raw draft text and draft assets are intentionally not published.
 
@@ -41,18 +41,18 @@ Diff-style summary versus previous version:
 
 ## Git Diff Tracking
 
-Use this page for the public summary. Use Git when you need line-level audit detail between public versions:
+Use Git when you need line-level audit detail between public versions:
 
 ```bash
-git log --follow -- src/content/docs/vi/guidelines/human-in-the-loop-ai-code-review-bottleneck.md
-git diff <old-commit>..<new-commit> -- src/content/docs/vi/guidelines/human-in-the-loop-ai-code-review-bottleneck.md
+git log --follow -- src/content/docs/vi/topics/human-in-the-loop-ai-code-review-bottleneck.md
+git diff <old-commit>..<new-commit> -- src/content/docs/vi/topics/human-in-the-loop-ai-code-review-bottleneck.md
 ```
 
 For English:
 
 ```bash
-git log --follow -- src/content/docs/guidelines/human-in-the-loop-ai-code-review-bottleneck.md
-git diff <old-commit>..<new-commit> -- src/content/docs/guidelines/human-in-the-loop-ai-code-review-bottleneck.md
+git log --follow -- src/content/docs/topics/human-in-the-loop-ai-code-review-bottleneck.md
+git diff <old-commit>..<new-commit> -- src/content/docs/topics/human-in-the-loop-ai-code-review-bottleneck.md
 ```
 
 ## Template For The Next Version
