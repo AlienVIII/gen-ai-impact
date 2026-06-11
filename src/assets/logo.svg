@@ -1,22 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 72" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 90" fill="none">
   <!-- GenAI -->
   <text
     x="0"
-    y="52"
+    y="54"
     font-family="Inter, system-ui, sans-serif"
     font-size="52"
     font-weight="800"
-    fill="#4A3F36"
+    fill="#3B2416"
     letter-spacing="-1"
-  >Gen<tspan fill="#4A3F36">AI</tspan></text>
+  >Gen<tspan fill="#3B2416">AI</tspan></text>
   <!-- IMPACT -->
   <text
-    x="4"
-    y="68"
+    x="2"
+    y="88"
     font-family="Inter, system-ui, sans-serif"
-    font-size="20"
+    font-size="33"
     font-weight="900"
-    fill="#C18A63"
+    fill="#BF7858"
     letter-spacing="3"
   >IMPACT</text>
 </svg>
