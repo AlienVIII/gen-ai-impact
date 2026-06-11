@@ -11,7 +11,7 @@ Gen AI Impact là static documentation site. Site không có account, comment, f
 
 Site không chủ động thu thập personal information từ visitor.
 
-Vì site host trên Cloudflare Pages, Cloudflare có thể xử lý request metadata tiêu chuẩn như IP address, user agent, timestamp, và requested URL cho security, reliability, analytics, và abuse prevention. Xem policy của Cloudflare để biết chi tiết về cách họ xử lý dữ liệu.
+Vì site host trên GitHub Pages, GitHub có thể xử lý request metadata tiêu chuẩn như IP address, user agent, timestamp, và requested URL để vận hành, bảo vệ, và duy trì hosting service. Xem privacy policy của GitHub để biết chi tiết về cách họ xử lý dữ liệu.
 
 ## Cookies Và Tracking
 

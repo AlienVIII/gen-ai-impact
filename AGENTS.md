@@ -15,10 +15,9 @@
 - Update `astro.config.mjs` sidebar and translations when adding new top-level topic pages.
 - Keep public topic indexes in `src/content/docs/**/contents.md`.
 - Keep internal draft/history notes outside `src/content/docs/`; rely on Git diff for line-level change history.
-- Deploy target is Cloudflare Pages at `https://gen-ai-impact.pages.dev/`.
-- Cloudflare Pages should connect to GitHub repo `AlienVIII/gen-ai-impact`, use build command `npm run build`, output directory `dist`, production branch `main`, and Node `24`.
-- Pull requests should produce Cloudflare Preview Deployments; merges/pushes to `main` should deploy Production.
-- GitHub Pages is no-cost only for public repositories on GitHub Free. For a private repo with no-cost hosting, keep Cloudflare Pages as the default.
+- Deploy target is GitHub Pages at `https://alienviii.github.io/gen-ai-impact/`.
+- GitHub Pages should use GitHub Actions with `.github/workflows/deploy.yml`, Node `24`, npm, and production branch `main`.
+- Because this is a GitHub project site, keep `site: 'https://alienviii.github.io'` and `base: '/gen-ai-impact'` in `astro.config.mjs` unless a custom domain is added.
 - Avoid root-absolute internal links such as `/vi/...`; use relative links so deploy targets with or without subpaths stay valid.
 - Before claiming completion, run `npm run build`.
 

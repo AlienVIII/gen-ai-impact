@@ -30,34 +30,34 @@ Built with [Astro Starlight](https://starlight.astro.build/).
 
 ## Deploy
 
-Target: Cloudflare Pages for `AlienVIII/gen-ai-impact`.
+Target: GitHub Pages for `AlienVIII/gen-ai-impact`.
 
-Reason: GitHub Pages is no-cost for public repositories on GitHub Free, but Pages from a private repository requires a paid GitHub plan. Cloudflare Pages has a free plan and can deploy from GitHub while keeping this repository private.
+Reason: this repository is public, so GitHub Pages can host the Astro static site directly through GitHub Actions.
 
 Production URL:
 
-- `https://gen-ai-impact.pages.dev/`
+- `https://alienviii.github.io/gen-ai-impact/`
 
-Cloudflare Pages settings:
+GitHub Pages settings:
 
-- Framework preset: Astro
-- Build command: `npm run build`
-- Build output directory: `dist`
+- Source: `GitHub Actions`
+- Workflow: `.github/workflows/deploy.yml`
 - Production branch: `main`
-- Node version: `24`
+- Astro `site`: `https://alienviii.github.io`
+- Astro `base`: `/gen-ai-impact`
 
 CI/CD behavior:
 
-- Pull requests: Cloudflare creates Preview Deployments.
-- Merges/pushes to `main`: Cloudflare builds and deploys Production.
+- Pushes to `main`: GitHub Actions builds and deploys Production.
+- Manual deploy: run the workflow from the GitHub Actions tab.
+- Pull requests: no preview deployment by default.
 
-One-time Cloudflare setup:
+One-time GitHub setup:
 
-1. Open Cloudflare Dashboard.
-2. Go to Workers & Pages.
-3. Create application → Pages → Connect to Git.
-4. Select `AlienVIII/gen-ai-impact`.
-5. Use the settings above and deploy.
+1. Open GitHub repository settings.
+2. Go to Pages.
+3. Under Build and deployment, set Source to `GitHub Actions`.
+4. Push `main`.
 
 ## Project Structure
 

@@ -11,7 +11,7 @@ Gen AI Impact is a static documentation site. It does not provide accounts, comm
 
 This site does not intentionally collect personal information from visitors.
 
-Because the site is hosted on Cloudflare Pages, Cloudflare may process standard request metadata such as IP address, user agent, timestamp, and requested URL for security, reliability, analytics, and abuse prevention. Refer to Cloudflare's own policies for details about their processing.
+Because the site is hosted on GitHub Pages, GitHub may process standard request metadata such as IP address, user agent, timestamp, and requested URL to operate, secure, and maintain the hosting service. Refer to GitHub's own privacy policies for details about their processing.
 
 ## Cookies And Tracking
 

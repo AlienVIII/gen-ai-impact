@@ -2,9 +2,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const site = 'https://alienviii.github.io';
+const base = '/gen-ai-impact';
+
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://gen-ai-impact.pages.dev',
+	site,
+	base,
 	integrations: [
 		starlight({
 			title: 'Gen AI Impact',
@@ -18,7 +22,7 @@ export default defineConfig({
 					tag: 'script',
 					content: `
 (function () {
-  var frames = ['/favicon-prompt.svg', '/favicon-cursor.svg'];
+  var frames = ['${base}/favicon-prompt.svg', '${base}/favicon-cursor.svg'];
   var i = 0;
   setInterval(function () {
     var link = document.querySelector("link[rel~='icon']") || document.createElement('link');
