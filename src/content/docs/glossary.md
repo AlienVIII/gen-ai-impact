@@ -9,6 +9,10 @@ This glossary keeps recurring terms consistent across topics.
 
 A tool that can plan, edit, run commands, and verify code changes with some degree of autonomy. In these topics, an agent is treated as an assistant inside a controlled engineering workflow, not as the accountable owner.
 
+## Agent-ready Environment
+
+An engineering environment where an agent can follow documented commands, use safe fixtures, run validation, and produce artifacts without needing broad permissions or production access.
+
 ## Artifact
 
 Evidence produced by a change that a reviewer can inspect without reconstructing the whole task. Examples: screenshot, trace, benchmark result, sample output, deployment report, test output, or structured diff.
@@ -36,3 +40,11 @@ Concrete evidence that the author or agent ran the relevant validation. A claim 
 ## Risk Boundary
 
 The line around the part of the system where failure can spread. Good task breakdown keeps this boundary small enough that reviewers can understand, test, roll back, or discard the change.
+
+## Sandbox
+
+A constrained environment where an agent can run commands or flows without touching production data, production secrets, or systems outside the task scope.
+
+## Validation Harness
+
+The set of commands, fixtures, and checks that prove a change is buildable, testable, and safe enough for review.

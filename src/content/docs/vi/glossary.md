@@ -9,6 +9,10 @@ Trang này giữ cách dùng thuật ngữ nhất quán giữa các topic.
 
 Công cụ có thể plan, edit, chạy command, và verify code change với một mức tự chủ nhất định. Trong các topic này, agent là assistant trong workflow engineering có kiểm soát, không phải accountable owner.
 
+## Agent-ready Environment
+
+Môi trường engineering nơi agent có thể làm theo command đã document, dùng fixture an toàn, chạy validation, và tạo artifact mà không cần broad permission hoặc production access.
+
 ## Artifact
 
 Bằng chứng mà reviewer có thể kiểm tra mà không cần reconstruct toàn bộ task. Ví dụ: screenshot, trace, benchmark result, sample output, deployment report, test output, hoặc structured diff.
@@ -36,3 +40,11 @@ Bằng chứng cụ thể rằng author hoặc agent đã chạy validation liê
 ## Risk Boundary
 
 Ranh giới quanh phần hệ thống nơi failure có thể lan ra. Task breakdown tốt giữ boundary đủ nhỏ để reviewer hiểu, test, rollback, hoặc vứt bỏ change.
+
+## Sandbox
+
+Môi trường bị giới hạn nơi agent có thể chạy command hoặc flow mà không chạm production data, production secrets, hoặc hệ thống ngoài scope của task.
+
+## Validation Harness
+
+Tập command, fixture, và check dùng để chứng minh một change build được, test được, và đủ an toàn để review.

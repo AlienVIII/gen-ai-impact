@@ -56,6 +56,11 @@ export default defineConfig({
 							translations: { vi: 'Human-in-the-loop: Nghẽn cổ chai trong AI code review' },
 							slug: 'topics/human-in-the-loop-ai-code-review-bottleneck',
 						},
+						{
+							label: 'Agent-ready Environment: Prompts Do Not Scale, Environments Do',
+							translations: { vi: 'Agent-ready environment: Prompt không scale, environment mới scale' },
+							slug: 'topics/agent-ready-environment-prompt-does-not-scale',
+						},
 					],
 				},
 				{
