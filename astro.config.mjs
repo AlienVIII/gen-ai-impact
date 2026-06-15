@@ -61,6 +61,26 @@ export default defineConfig({
 							translations: { vi: 'Agent-ready environment: Prompt không scale, environment mới scale' },
 							slug: 'topics/agent-ready-environment-prompt-does-not-scale',
 						},
+						{
+							label: 'Risk-based Delivery: Slice Work By Blast Radius',
+							translations: { vi: 'Risk-based delivery: Chia việc theo blast radius' },
+							slug: 'topics/risk-based-delivery-blast-radius',
+						},
+						{
+							label: 'Agent Security Boundary: Secrets, Permissions, Tools, MCP',
+							translations: { vi: 'Agent security boundary: Secrets, permissions, tools, MCP' },
+							slug: 'topics/agent-security-boundary-secrets-permissions-tools',
+						},
+						{
+							label: 'Boring Codebases Win: Code Quality Is AI Leverage',
+							translations: { vi: 'Boring codebases win: Code quality là AI leverage' },
+							slug: 'topics/boring-codebases-win-ai-leverage',
+						},
+						{
+							label: 'Human Accountability: Who Owns The Change When An Agent Writes Code?',
+							translations: { vi: 'Human accountability: Ai sở hữu change khi agent viết code?' },
+							slug: 'topics/human-accountability-agentic-delivery',
+						},
 					],
 				},
 				{

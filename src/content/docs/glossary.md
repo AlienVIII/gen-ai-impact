@@ -9,6 +9,10 @@ This glossary keeps recurring terms consistent across topics.
 
 A tool that can plan, edit, run commands, and verify code changes with some degree of autonomy. In these topics, an agent is treated as an assistant inside a controlled engineering workflow, not as the accountable owner.
 
+## Accountability
+
+The human responsibility for intent, risk acceptance, merge/deploy decisions, and maintenance after a change ships.
+
 ## Agent-ready Environment
 
 An engineering environment where an agent can follow documented commands, use safe fixtures, run validation, and produce artifacts without needing broad permissions or production access.
@@ -48,3 +52,11 @@ A constrained environment where an agent can run commands or flows without touch
 ## Validation Harness
 
 The set of commands, fixtures, and checks that prove a change is buildable, testable, and safe enough for review.
+
+## Least Privilege
+
+The practice of giving an agent, tool, token, or human only the permissions required for the current task.
+
+## Supply Chain Risk
+
+Risk introduced through dependencies, build tools, generated code, package registries, plugins, MCP servers, or other components outside the direct source change.

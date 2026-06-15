@@ -29,6 +29,15 @@ Reviewed public source content intended for publication:
 - The repository has no open-source `LICENSE` file by default; do not treat it as open source unless a license is intentionally added later.
 - GitHub Pages production deploys are public. Pull requests do not create preview deployments by default.
 
+## Follow-up Validation - 2026-06-15
+
+- Public topic set now contains six topics in English and Vietnamese under `src/content/docs/topics/` and `src/content/docs/vi/topics/`.
+- Each topic ends with source attribution or community attribution.
+- `npm run build` generated 23 pages and a sitemap.
+- `npm audit --omit=dev` reported `found 0 vulnerabilities`.
+- `bun install --frozen-lockfile` completed with no lockfile changes.
+- Output scans found no draft routes, legacy `/guidelines` or `/versions` routes, local filesystem paths, Cloudflare deploy references, or credential-like patterns.
+
 ## Publication Rules
 
 - Publish only content under `src/content/docs/**`.

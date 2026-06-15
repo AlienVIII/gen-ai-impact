@@ -9,6 +9,10 @@ Trang này giữ cách dùng thuật ngữ nhất quán giữa các topic.
 
 Công cụ có thể plan, edit, chạy command, và verify code change với một mức tự chủ nhất định. Trong các topic này, agent là assistant trong workflow engineering có kiểm soát, không phải accountable owner.
 
+## Accountability
+
+Trách nhiệm của human với intent, risk acceptance, merge/deploy decision, và maintenance sau khi change được ship.
+
 ## Agent-ready Environment
 
 Môi trường engineering nơi agent có thể làm theo command đã document, dùng fixture an toàn, chạy validation, và tạo artifact mà không cần broad permission hoặc production access.
@@ -48,3 +52,11 @@ Môi trường bị giới hạn nơi agent có thể chạy command hoặc flow
 ## Validation Harness
 
 Tập command, fixture, và check dùng để chứng minh một change build được, test được, và đủ an toàn để review.
+
+## Least Privilege
+
+Nguyên tắc chỉ cấp cho agent, tool, token, hoặc human đúng quyền cần cho task hiện tại.
+
+## Supply Chain Risk
+
+Rủi ro đến từ dependency, build tool, generated code, package registry, plugin, MCP server, hoặc component nằm ngoài source change trực tiếp.
