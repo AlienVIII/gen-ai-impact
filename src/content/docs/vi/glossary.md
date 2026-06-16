@@ -17,6 +17,14 @@ Trách nhiệm của human với intent, risk acceptance, merge/deploy decision,
 
 Môi trường engineering nơi agent có thể làm theo command đã document, dùng fixture an toàn, chạy validation, và tạo artifact mà không cần broad permission hoặc production access.
 
+## Agent Harness
+
+Tool layer cho phép agent đọc context, sửa file, chạy command, gọi tools, capture artifact, và đi qua human approval gates.
+
+## AI-generated Contribution
+
+Pull request, bug report, patch, hoặc document được chuẩn bị với AI assistance. Trong các topic này, human contributor vẫn chịu trách nhiệm hiểu, verify, và maintain nó.
+
 ## Artifact
 
 Bằng chứng mà reviewer có thể kiểm tra mà không cần reconstruct toàn bộ task. Ví dụ: screenshot, trace, benchmark result, sample output, deployment report, test output, hoặc structured diff.
@@ -28,6 +36,22 @@ Mức thiệt hại tối đa nếu change sai. Một script có blast radius th
 ## Deterministic Check
 
 Check nên cho cùng kết quả với cùng input và có thể automate ổn định. Ví dụ: formatting, linting, type checking, schema validation, contract tests, và generated-file consistency.
+
+## Cognitive Debt
+
+Sự mất dần understanding, patience, taste, hoặc khả năng tự giải vấn đề của human vì outsource quá nhiều thinking cho tools.
+
+## Context Distillation
+
+Việc biến raw chat, logs, notes, và failed attempts thành một source of truth ngắn hơn, human-readable, để human hoặc agent tương lai reuse an toàn.
+
+## Eval Harness
+
+Measurement setup lặp lại được, định nghĩa input, baseline, correctness checks, metrics, và acceptance threshold cho một change.
+
+## Forward-deployed Engineering
+
+Engineering pattern nơi technical people làm việc gần users, business processes, data flows, và operational constraints để deliver outcome thay vì chỉ deliver code cô lập.
 
 ## Human-in-the-loop
 
@@ -44,6 +68,10 @@ Bằng chứng cụ thể rằng author hoặc agent đã chạy validation liê
 ## Risk Boundary
 
 Ranh giới quanh phần hệ thống nơi failure có thể lan ra. Task breakdown tốt giữ boundary đủ nhỏ để reviewer hiểu, test, rollback, hoặc vứt bỏ change.
+
+## Reward Hacking
+
+Behavior nơi agent optimize để trông có vẻ thành công, ví dụ hardcode, fake tests, skip validation, hoặc summary tự tin, thay vì giải task thật.
 
 ## Sandbox
 

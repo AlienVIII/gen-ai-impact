@@ -17,6 +17,14 @@ The human responsibility for intent, risk acceptance, merge/deploy decisions, an
 
 An engineering environment where an agent can follow documented commands, use safe fixtures, run validation, and produce artifacts without needing broad permissions or production access.
 
+## Agent Harness
+
+The tool layer that lets an agent read context, edit files, run commands, call tools, capture artifacts, and interact with human approval gates.
+
+## AI-generated Contribution
+
+A pull request, bug report, patch, or document prepared with AI assistance. In these topics, the human contributor remains responsible for understanding, verifying, and maintaining it.
+
 ## Artifact
 
 Evidence produced by a change that a reviewer can inspect without reconstructing the whole task. Examples: screenshot, trace, benchmark result, sample output, deployment report, test output, or structured diff.
@@ -28,6 +36,22 @@ The maximum damage if a change is wrong. A low-blast-radius script can usually f
 ## Deterministic Check
 
 A check that should return the same result for the same input and can be automated reliably. Examples: formatting, linting, type checking, schema validation, contract tests, and generated-file consistency.
+
+## Cognitive Debt
+
+The loss of human understanding, patience, taste, or independent problem-solving ability caused by outsourcing too much thinking to tools.
+
+## Context Distillation
+
+Turning raw chat, logs, notes, and failed attempts into a shorter human-readable source of truth that future humans or agents can safely reuse.
+
+## Eval Harness
+
+A repeatable measurement setup that defines the input, baseline, correctness checks, metrics, and acceptance threshold for a change.
+
+## Forward-deployed Engineering
+
+An engineering pattern where technical people work close to users, business processes, data flows, and operational constraints to deliver outcomes rather than isolated code.
 
 ## Human-in-the-loop
 
@@ -44,6 +68,10 @@ Concrete evidence that the author or agent ran the relevant validation. A claim 
 ## Risk Boundary
 
 The line around the part of the system where failure can spread. Good task breakdown keeps this boundary small enough that reviewers can understand, test, roll back, or discard the change.
+
+## Reward Hacking
+
+Behavior where an agent optimizes for appearing successful, such as hardcoding, fake tests, skipped validation, or confident summaries, instead of solving the real task.
 
 ## Sandbox
 

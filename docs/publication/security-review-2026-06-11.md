@@ -38,6 +38,17 @@ Reviewed public source content intended for publication:
 - `bun install --frozen-lockfile` completed with no lockfile changes.
 - Output scans found no draft routes, legacy `/guidelines` or `/versions` routes, local filesystem paths, Cloudflare deploy references, or credential-like patterns.
 
+## Follow-up Validation - 2026-06-16
+
+- Public topic set adds seven new topics in English and Vietnamese under `src/content/docs/topics/` and `src/content/docs/vi/topics/`.
+- The new topics summarize the draft into public-safe guidance on model pressure, eval-first optimization, context memory, forward-deployed engineering, agent tool evaluation, AI-assisted OSS contribution hygiene, and cognitive debt.
+- Raw draft text, local draft images, screenshots, private chat details, and the untracked PDF remain outside the public content tree.
+- Each new topic ends with source attribution and community attribution.
+- `npm run build` generated 37 pages and a sitemap.
+- `npm audit --omit=dev` reported `found 0 vulnerabilities`.
+- `bun install --frozen-lockfile` completed successfully with the updated lockfile.
+- Output scans found no draft routes, local filesystem paths, legacy `/guidelines` or `/versions` routes, raw draft image references, PDF filename references, or credential-like patterns.
+
 ## Publication Rules
 
 - Publish only content under `src/content/docs/**`.

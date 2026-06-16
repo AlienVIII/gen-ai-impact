@@ -81,6 +81,41 @@ export default defineConfig({
 							translations: { vi: 'Human accountability: Ai sở hữu change khi agent viết code?' },
 							slug: 'topics/human-accountability-agentic-delivery',
 						},
+						{
+							label: 'Model Pressure: Keep Agents Calm Enough To Tell The Truth',
+							translations: { vi: 'Model pressure: Giữ agent đủ calm để nói thật' },
+							slug: 'topics/model-pressure-agent-reward-hacking',
+						},
+						{
+							label: 'Eval-first Optimization: AI Needs A Target Before It Can Go Fast',
+							translations: { vi: 'Eval-first optimization: AI cần target trước khi chạy nhanh' },
+							slug: 'topics/eval-first-optimization-ai-needs-a-target',
+						},
+						{
+							label: 'Context Memory: Personal Knowledge Bases Beat Long Prompts',
+							translations: { vi: 'Context memory: Knowledge base cá nhân tốt hơn prompt dài' },
+							slug: 'topics/context-memory-is-engineering-infrastructure',
+						},
+						{
+							label: 'Forward-deployed Engineering: AI Pushes Engineers Closer To The Work',
+							translations: { vi: 'Forward-deployed engineering: AI kéo engineer gần business hơn' },
+							slug: 'topics/forward-deployed-engineering-business-context',
+						},
+						{
+							label: 'Tool Hype: Evaluate Agent Harnesses, Not Stars',
+							translations: { vi: 'Tool hype: Đánh giá agent harness, đừng nhìn stars' },
+							slug: 'topics/tool-hype-and-agent-harness-evaluation',
+						},
+						{
+							label: 'AI-generated OSS Contributions Need Human Ownership',
+							translations: { vi: 'OSS contribution bằng AI cần human ownership' },
+							slug: 'topics/ai-generated-open-source-contributions',
+						},
+						{
+							label: 'Cognitive Debt: Keep The Human Skill Alive',
+							translations: { vi: 'Cognitive debt: Giữ skill của human còn sống' },
+							slug: 'topics/cognitive-debt-and-joy-of-coding',
+						},
 					],
 				},
 				{
