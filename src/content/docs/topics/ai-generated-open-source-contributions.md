@@ -1,5 +1,5 @@
 ---
-title: "AI-generated OSS Contributions Need Human Ownership"
+title: "12. AI-generated OSS Contributions Need Human Ownership"
 description: Why AI-assisted open source pull requests should be small, verified, respectful of maintainer time, and signed by accountable humans.
 ---
 

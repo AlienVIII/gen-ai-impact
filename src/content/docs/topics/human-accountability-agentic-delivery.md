@@ -1,5 +1,5 @@
 ---
-title: "Human Accountability: Who Owns The Change When An Agent Writes Code?"
+title: "06. Human Accountability: Who Owns The Change When An Agent Writes Code?"
 description: How to define owner, reviewer, approver, deployer, and accountability in AI-assisted delivery.
 ---
 

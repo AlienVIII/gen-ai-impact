@@ -1,5 +1,5 @@
 ---
-title: "Eval-first optimization: AI cần target trước khi chạy nhanh"
+title: "08. Eval-first optimization: AI cần target trước khi chạy nhanh"
 description: Vì sao AI chỉ optimize tốt khi team đã có baseline, metric, fixture và rollback boundary rõ ràng.
 ---
 

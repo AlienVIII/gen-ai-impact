@@ -1,5 +1,5 @@
 ---
-title: "Tool hype: Đánh giá agent harness, đừng nhìn stars"
+title: "11. Tool hype: Đánh giá agent harness, đừng nhìn stars"
 description: Checklist thực dụng để chọn AI agent tools dựa trên workflow fit, provenance, security boundary và output đo được thay vì social proof.
 ---
 

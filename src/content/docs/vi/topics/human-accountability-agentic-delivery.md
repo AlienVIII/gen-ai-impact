@@ -1,5 +1,5 @@
 ---
-title: "Human accountability: Ai sở hữu change khi agent viết code?"
+title: "06. Human accountability: Ai sở hữu change khi agent viết code?"
 description: Cách phân định owner, reviewer, approver, deployer, và accountability trong AI-assisted delivery.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Cognitive Debt: Keep The Human Skill Alive"
+title: "13. Cognitive Debt: Keep The Human Skill Alive"
 description: How heavy AI assistance can reduce persistence, taste, and learning if engineers stop reading, struggling, and owning the craft.
 ---
 

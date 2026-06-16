@@ -1,5 +1,5 @@
 ---
-title: "Risk-based delivery: Chia việc theo blast radius"
+title: "03. Risk-based delivery: Chia việc theo blast radius"
 description: Cách chia task và review AI-assisted delivery theo mức rủi ro nếu change sai, thay vì theo cảm giác task nhỏ hay lớn.
 ---
 

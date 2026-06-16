@@ -1,5 +1,5 @@
 ---
-title: "Risk-based Delivery: Slice Work By Blast Radius"
+title: "03. Risk-based Delivery: Slice Work By Blast Radius"
 description: How to split and review AI-assisted delivery by the damage a wrong change can cause, not by whether the task feels small or large.
 ---
 

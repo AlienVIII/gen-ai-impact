@@ -1,5 +1,5 @@
 ---
-title: "Agent Security Boundary: Secrets, Permissions, Tools, MCP"
+title: "04. Agent Security Boundary: Secrets, Permissions, Tools, MCP"
 description: How to treat coding agents as actors with tool access, token scope, filesystem access, network access, and supply-chain risk.
 ---
 

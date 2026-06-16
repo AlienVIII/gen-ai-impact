@@ -1,5 +1,5 @@
 ---
-title: "Context memory: Knowledge base cá nhân tốt hơn prompt dài"
+title: "09. Context memory: Knowledge base cá nhân tốt hơn prompt dài"
 description: Cách giữ context hữu ích qua handoff, wiki cá nhân, indexed notes và archive đã sanitize mà không nhồi mọi thứ vào mỗi session.
 ---
 

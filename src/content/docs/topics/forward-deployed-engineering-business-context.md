@@ -1,5 +1,5 @@
 ---
-title: "Forward-deployed Engineering: AI Pushes Engineers Closer To The Work"
+title: "10. Forward-deployed Engineering: AI Pushes Engineers Closer To The Work"
 description: Why AI increases the value of engineers who understand business flow, data flow, constraints, and deployment reality.
 ---
 

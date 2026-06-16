@@ -1,5 +1,5 @@
 ---
-title: "Forward-deployed engineering: AI kéo engineer gần business hơn"
+title: "10. Forward-deployed engineering: AI kéo engineer gần business hơn"
 description: Vì sao AI làm tăng giá trị của engineer hiểu business flow, data flow, constraint và thực tế deployment.
 ---
 

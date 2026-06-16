@@ -1,5 +1,5 @@
 ---
-title: "Boring Codebases Win: Code Quality Is AI Leverage"
+title: "05. Boring Codebases Win: Code Quality Is AI Leverage"
 description: Why clear, boring, typed, testable, and scriptable codebases make AI coding agents more useful than messy ones.
 ---
 

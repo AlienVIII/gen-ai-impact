@@ -1,5 +1,5 @@
 ---
-title: "Context Memory: Personal Knowledge Bases Beat Long Prompts"
+title: "09. Context Memory: Personal Knowledge Bases Beat Long Prompts"
 description: How to preserve useful agent context through handoffs, personal wikis, indexed notes, and sanitized archives without flooding every session.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "OSS contribution bằng AI cần human ownership"
+title: "12. OSS contribution bằng AI cần human ownership"
 description: Vì sao pull request open source có AI hỗ trợ phải nhỏ, đã verify, tôn trọng thời gian maintainer, và được human chịu trách nhiệm.
 ---
 

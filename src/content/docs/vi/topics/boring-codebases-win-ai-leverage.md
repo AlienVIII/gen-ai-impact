@@ -1,5 +1,5 @@
 ---
-title: "Boring codebases win: Code quality là AI leverage"
+title: "05. Boring codebases win: Code quality là AI leverage"
 description: Vì sao codebase rõ boundary, boring, typed, testable, và scriptable giúp AI coding agent tạo giá trị hơn codebase lộn xộn.
 ---
 

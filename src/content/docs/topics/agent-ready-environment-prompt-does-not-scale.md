@@ -1,5 +1,5 @@
 ---
-title: "Agent-ready Environment: Prompts Do Not Scale, Environments Do"
+title: "02. Agent-ready Environment: Prompts Do Not Scale, Environments Do"
 description: Why AI coding agents need runnable environments, validation commands, safe fixtures, and reviewable artifacts instead of longer prompts.
 ---
 

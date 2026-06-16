@@ -1,5 +1,5 @@
 ---
-title: "Eval-first Optimization: AI Needs A Target Before It Can Go Fast"
+title: "08. Eval-first Optimization: AI Needs A Target Before It Can Go Fast"
 description: Why AI can optimize aggressively only after a team defines baselines, metrics, fixtures, and rollback boundaries.
 ---
 

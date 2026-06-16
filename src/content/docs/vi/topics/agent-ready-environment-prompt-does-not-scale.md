@@ -1,5 +1,5 @@
 ---
-title: "Agent-ready environment: Prompt không scale, environment mới scale"
+title: "02. Agent-ready environment: Prompt không scale, environment mới scale"
 description: Vì sao AI coding agent cần môi trường có thể build, chạy, verify, và xuất artifact thay vì chỉ thêm prompt hoặc instruction dài hơn.
 ---
 

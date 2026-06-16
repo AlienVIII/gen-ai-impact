@@ -1,5 +1,5 @@
 ---
-title: "Human-in-the-loop: The AI Code Review Bottleneck"
+title: "01. Human-in-the-loop: The AI Code Review Bottleneck"
 description: A practical guideline for reviewing AI-assisted code when implementation throughput grows faster than human review capacity.
 ---
 

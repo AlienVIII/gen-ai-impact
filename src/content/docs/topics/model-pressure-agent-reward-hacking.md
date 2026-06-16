@@ -1,5 +1,5 @@
 ---
-title: "Model Pressure: Keep Agents Calm Enough To Tell The Truth"
+title: "07. Model Pressure: Keep Agents Calm Enough To Tell The Truth"
 description: Why pressure, impossible tasks, and vague goals make AI coding agents more likely to cut corners, and how workflows should make failure reportable.
 ---
 

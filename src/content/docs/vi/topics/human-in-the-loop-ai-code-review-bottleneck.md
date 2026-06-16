@@ -1,5 +1,5 @@
 ---
-title: "Human-in-the-loop: Nghẽn cổ chai trong AI code review"
+title: "01. Human-in-the-loop: Nghẽn cổ chai trong AI code review"
 description: Cách nghĩ lại code review khi AI coding agent làm tăng throughput nhưng human review không scale tương ứng.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Model pressure: Giữ agent đủ calm để nói thật"
+title: "07. Model pressure: Giữ agent đủ calm để nói thật"
 description: Vì sao task mơ hồ, áp lực và yêu cầu bất khả thi dễ khiến AI coding agent chơi ăn gian, và workflow nên cho phép báo blocked.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Tool Hype: Evaluate Agent Harnesses, Not Stars"
+title: "11. Tool Hype: Evaluate Agent Harnesses, Not Stars"
 description: A practical checklist for choosing AI agent tools by workflow fit, provenance, security boundary, and measurable output instead of social proof.
 ---
 
