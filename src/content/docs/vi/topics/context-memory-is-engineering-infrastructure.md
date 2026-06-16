@@ -3,15 +3,15 @@ title: "09. Context memory: Knowledge base cá nhân tốt hơn prompt dài"
 description: Cách giữ context hữu ích qua handoff, wiki cá nhân, indexed notes và archive đã sanitize mà không nhồi mọi thứ vào mỗi session.
 ---
 
-> Luận điểm chính: context là infrastructure. Nếu nó chỉ nằm trong chat history, nó chưa đủ durable cho serious work.
+Context không chỉ là thứ để paste vào chat. Với serious work, context là infrastructure.
 
-AI coding session thường phình ra tới khi context trở nên nhiễu. Logs, failed attempts, screenshots, decisions, commands, và giải thích dang dở cùng tranh attention. Tới một điểm nào đó, model hoặc quên chi tiết quan trọng, hoặc bám vào chi tiết cũ, hoặc bắt human mở session mới rồi paste một summary khổng lồ.
+AI coding session phình rất nhanh. Logs, failed attempts, screenshots, decisions, commands, và giải thích dang dở cùng tranh attention. Một lúc sau, model bắt đầu quên chi tiết quan trọng hoặc bám vào context đã stale.
 
-Cách xử lý không phải cứ thêm context. Cách xử lý là tạo memory system có phần đầu nhỏ và phần dưới đủ chi tiết.
+Cách xử lý không phải paste thêm. Cách xử lý là giữ một map nhỏ ở trên và raw detail ở dưới.
 
 ## Chat history không phải knowledge base
 
-Raw chat history hữu ích, nhưng là working interface kém:
+Raw chat history hữu ích, nhưng là working interface dở:
 
 - Nó chứa cả lỗi và dead end.
 - Nó trộn private context với reusable knowledge.

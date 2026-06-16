@@ -1,11 +1,11 @@
 ---
-title: "13. Cognitive Debt: Keep The Human Skill Alive"
+title: "16. Cognitive Debt: Keep The Human Skill Alive"
 description: How heavy AI assistance can reduce persistence, taste, and learning if engineers stop reading, struggling, and owning the craft.
 ---
 
-> The main claim: AI should reduce mechanical work, not remove the human practice that builds engineering judgment.
+AI should reduce mechanical work. It should not remove the practice that builds engineering judgment.
 
-AI can make software work more pleasant. It can also make engineers less patient with difficult reading, debugging, and design work. Both can be true.
+AI can make software work more pleasant. It can also make engineers less patient with difficult reading, debugging, and design. Both can be true.
 
 The danger is not that an engineer uses AI. The danger is that AI becomes the default escape from every moment of productive struggle. If that happens, the team may ship faster for a while while slowly losing the human skill needed to judge what it ships.
 

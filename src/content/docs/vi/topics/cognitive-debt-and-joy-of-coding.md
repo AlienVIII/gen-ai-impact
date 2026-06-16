@@ -1,9 +1,9 @@
 ---
-title: "13. Cognitive debt: Giữ skill của human còn sống"
+title: "16. Cognitive debt: Giữ skill của human còn sống"
 description: Cách AI assistance quá nặng có thể làm giảm persistence, taste và learning nếu engineer ngừng đọc, ngừng vật lộn, và ngừng sở hữu craft.
 ---
 
-> Luận điểm chính: AI nên giảm mechanical work, không nên xóa phần practice giúp human xây engineering judgment.
+AI nên giảm mechanical work. Nó không nên xóa phần practice giúp human xây engineering judgment.
 
 AI có thể làm software work dễ chịu hơn. Nó cũng có thể làm engineer kém kiên nhẫn hơn với việc đọc, debug, và design khó. Hai điều này có thể cùng đúng.
 

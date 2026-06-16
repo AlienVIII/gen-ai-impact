@@ -1,11 +1,11 @@
 ---
-title: "11. Tool Hype: Evaluate Agent Harnesses, Not Stars"
+title: "14. Tool Hype: Evaluate Agent Harnesses, Not Stars"
 description: A practical checklist for choosing AI agent tools by workflow fit, provenance, security boundary, and measurable output instead of social proof.
 ---
 
-> The main claim: an agent harness is part of your engineering control plane. Evaluate it like infrastructure, not like a trending plugin.
+The AI tooling market is noisy. New agent frameworks, memory systems, token optimizers, MCP servers, prompt packs, and "awesome" lists appear constantly. Some are useful. Some are wrappers. Some are abandoned quickly. Some may be unsafe.
 
-The AI tooling market is noisy. New agent frameworks, memory systems, token optimizers, MCP servers, prompt packs, and "awesome" lists appear constantly. Some are useful. Some are thin wrappers. Some are abandoned quickly. Some may be insecure. Social proof is not enough.
+Treat an agent harness like infrastructure, not like a browser extension you install because it is trending.
 
 This matters because agent tools do not merely display text. They may read code, run commands, install packages, call external services, edit files, and access secrets. A weak tool choice can become a supply-chain and permission problem.
 

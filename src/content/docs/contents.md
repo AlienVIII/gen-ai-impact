@@ -16,10 +16,13 @@ Use this page as the public table of contents for published topics.
 - [07. Model Pressure: Keep Agents Calm Enough To Tell The Truth](../topics/model-pressure-agent-reward-hacking/)
 - [08. Eval-first Optimization: AI Needs A Target Before It Can Go Fast](../topics/eval-first-optimization-ai-needs-a-target/)
 - [09. Context Memory: Personal Knowledge Bases Beat Long Prompts](../topics/context-memory-is-engineering-infrastructure/)
-- [10. Forward-deployed Engineering: AI Pushes Engineers Closer To The Work](../topics/forward-deployed-engineering-business-context/)
-- [11. Tool Hype: Evaluate Agent Harnesses, Not Stars](../topics/tool-hype-and-agent-harness-evaluation/)
-- [12. AI-generated OSS Contributions Need Human Ownership](../topics/ai-generated-open-source-contributions/)
-- [13. Cognitive Debt: Keep The Human Skill Alive](../topics/cognitive-debt-and-joy-of-coding/)
+- [10. Personal Distillation: Build Your Own AI Knowledge Base](../topics/personal-distillation-ai-knowledge-base/)
+- [11. Agent Workflow: Task List, Handoff, Proof](../topics/agent-workflow-task-list-handoff-proof/)
+- [12. Source Triage: Links Are Leads, Not Evidence](../topics/source-triage-links-are-not-evidence/)
+- [13. Forward-deployed Engineering: AI Pushes Engineers Closer To The Work](../topics/forward-deployed-engineering-business-context/)
+- [14. Tool Hype: Evaluate Agent Harnesses, Not Stars](../topics/tool-hype-and-agent-harness-evaluation/)
+- [15. AI-generated OSS Contributions Need Human Ownership](../topics/ai-generated-open-source-contributions/)
+- [16. Cognitive Debt: Keep The Human Skill Alive](../topics/cognitive-debt-and-joy-of-coding/)
 
 ## Reference
 

@@ -1,11 +1,11 @@
 ---
-title: "11. Tool hype: Đánh giá agent harness, đừng nhìn stars"
+title: "14. Tool hype: Đánh giá agent harness, đừng nhìn stars"
 description: Checklist thực dụng để chọn AI agent tools dựa trên workflow fit, provenance, security boundary và output đo được thay vì social proof.
 ---
 
-> Luận điểm chính: agent harness là một phần của engineering control plane. Hãy đánh giá nó như infrastructure, không phải như plugin đang trend.
+Thị trường AI tooling rất nhiễu. Agent framework, memory system, token optimizer, MCP server, prompt pack, và "awesome" list mới xuất hiện liên tục. Có cái hữu ích. Có cái chỉ là wrapper mỏng. Có cái bị bỏ rất nhanh. Có cái có thể không an toàn.
 
-Thị trường AI tooling rất nhiễu. Agent framework, memory system, token optimizer, MCP server, prompt pack, và "awesome" list mới xuất hiện liên tục. Có cái hữu ích. Có cái chỉ là wrapper mỏng. Có cái bị bỏ rất nhanh. Có cái có thể không an toàn. Social proof chưa đủ.
+Hãy đánh giá agent harness như infrastructure, không phải như browser extension đang trend.
 
 Điều này quan trọng vì agent tool không chỉ hiển thị text. Nó có thể đọc code, chạy command, install package, gọi external service, sửa file, và access secret. Chọn tool yếu có thể biến thành supply-chain và permission problem.
 

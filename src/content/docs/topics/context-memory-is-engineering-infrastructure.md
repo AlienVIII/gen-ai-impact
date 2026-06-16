@@ -3,15 +3,15 @@ title: "09. Context Memory: Personal Knowledge Bases Beat Long Prompts"
 description: How to preserve useful agent context through handoffs, personal wikis, indexed notes, and sanitized archives without flooding every session.
 ---
 
-> The main claim: context is infrastructure. If it only lives in chat history, it is not durable enough for serious work.
+Context is not just something you paste into a chat. For serious work, context becomes infrastructure.
 
-AI coding sessions grow until the context becomes noisy. Logs, failed attempts, screenshots, decisions, commands, and partial explanations all compete for attention. At some point, the model either forgets important details, overfits to stale ones, or forces the human to restart with a giant pasted summary.
+AI coding sessions get noisy fast. Logs, failed attempts, screenshots, decisions, commands, and half-written explanations all compete for attention. After a while, the model starts forgetting important details or clinging to stale ones.
 
-The fix is not to keep adding context. The fix is to create a memory system that is small at the top and detailed at the bottom.
+The fix is not to paste more. The fix is to keep a small map at the top and raw detail underneath.
 
 ## Chat History Is Not A Knowledge Base
 
-Raw chat history is useful, but it is a poor working interface:
+Raw chat history is useful, but it is a bad working interface:
 
 - It contains mistakes and dead ends.
 - It mixes private context with reusable knowledge.
@@ -19,7 +19,7 @@ Raw chat history is useful, but it is a poor working interface:
 - It is too long to load into every session.
 - It often hides the final decision among many attempts.
 
-History should be archived, but not blindly replayed. A future agent needs the distilled state, not every token that produced it.
+Archive the history, but do not replay it blindly. A future agent needs the distilled state, not every token that produced it.
 
 A practical memory system has layers:
 

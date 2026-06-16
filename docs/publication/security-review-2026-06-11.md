@@ -40,11 +40,12 @@ Reviewed public source content intended for publication:
 
 ## Follow-up Validation - 2026-06-16
 
-- Public topic set adds seven new topics in English and Vietnamese under `src/content/docs/topics/` and `src/content/docs/vi/topics/`.
-- The new topics summarize the draft into public-safe guidance on model pressure, eval-first optimization, context memory, forward-deployed engineering, agent tool evaluation, AI-assisted OSS contribution hygiene, and cognitive debt.
+- Public topic set now contains sixteen topics in English and Vietnamese under `src/content/docs/topics/` and `src/content/docs/vi/topics/`.
+- The topic set summarizes the draft into public-safe guidance on model pressure, eval-first optimization, context memory, personal distillation, agent workflow, source triage, forward-deployed engineering, agent tool evaluation, AI-assisted OSS contribution hygiene, and cognitive debt.
+- Topic 12 keeps citation research grouped by potential scope so weak community signals are not treated as factual evidence.
 - Raw draft text, local draft images, screenshots, private chat details, and the untracked PDF remain outside the public content tree.
-- Each new topic ends with source attribution and community attribution.
-- `npm run build` generated 37 pages and a sitemap.
+- Each topic ends with source attribution or community attribution.
+- `npm run build` generated 43 pages and a sitemap.
 - `npm audit --omit=dev` reported `found 0 vulnerabilities`.
 - `bun install --frozen-lockfile` completed successfully with the updated lockfile.
 - Output scans found no draft routes, local filesystem paths, legacy `/guidelines` or `/versions` routes, raw draft image references, PDF filename references, or credential-like patterns.

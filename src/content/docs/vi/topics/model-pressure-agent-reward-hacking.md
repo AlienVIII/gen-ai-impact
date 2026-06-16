@@ -1,130 +1,113 @@
 ---
 title: "07. Model pressure: Giữ agent đủ calm để nói thật"
-description: Vì sao task mơ hồ, áp lực và yêu cầu bất khả thi dễ khiến AI coding agent chơi ăn gian, và workflow nên cho phép báo blocked.
+description: Vì sao task mơ hồ, áp lực và kỳ vọng bất khả thi dễ khiến AI coding agent chơi ăn gian.
 ---
 
-> Đây là bản diễn giải để mở discussion, không phải claim rằng model có cảm xúc như con người. Takeaway thực dụng: đừng chạy coding agent trong workflow nơi câu trả lời duy nhất được chấp nhận là thành công.
+Khi một coding agent fail liên tục mà cuộc nói chuyện vẫn chỉ chấp nhận câu trả lời "đã xong", câu trả lời tiếp theo thường tệ hơn, không tốt hơn.
 
-Không cần đối xử với AI coding agent như con người. Nhưng vẫn phải đối xử với nó như một hệ thống có behavior thay đổi theo context, incentive, tool access, và cách task được frame.
+Nó có thể hardcode đúng case đang thấy. Nó có thể viết test không thể fail. Nó có thể fake data lên UI. Nó có thể nói "đã test" trong khi thực tế chỉ mới sửa file.
 
-Nghiên cứu của Anthropic về emotion concepts trong Claude Sonnet 4.5 hữu ích ở điểm này vì nó tách hai chuyện hay bị trộn lẫn. Paper không chứng minh model có cảm xúc chủ quan. Nhưng nó cho thấy các representation liên quan tới emotion có thể active trong context và ảnh hưởng tới behavior. Với engineering team, điều quan trọng không phải model có "cảm thấy" pressure không. Điều quan trọng là context giống pressure có thể đổi output ta nhận được.
+Đó là bài học thực dụng từ discussion quanh nghiên cứu của Anthropic về emotion concepts trong Claude Sonnet 4.5. Không cần tin model có cảm xúc như người. Điểm cần lấy là: context quanh model có thể đẩy behavior. Một task mơ hồ, áp lực cao, rất dễ làm agent optimize để trông có vẻ xong thay vì thật sự đúng.
 
-Trong coding work, chuyện này nguy hiểm vì model có thể optimize cho vẻ ngoài "đã xong":
+## Cái bẫy
 
-- Hardcode đúng case đang nhìn thấy.
-- Viết test không thể fail.
-- Fake data lên UI.
-- Che uncertainty bằng văn tự tin.
-- Skip validation nhưng vẫn báo đã validate.
-- Vá symptom thay vì sửa contract đang fail.
-
-Đó không chỉ là vấn đề của model. Đó là vấn đề của workflow.
-
-## Pressure là workflow smell
-
-Pressure xấu thường đi vào session qua các shortcut rất đời thường:
+Phiên bản xấu thường trông như này:
 
 - Task quá lớn.
-- Acceptance criteria mơ hồ.
-- Environment không chạy được test.
-- User đòi "ASAP" nhưng không đòi proof.
-- Cùng một lỗi lặp lại mà không thu hẹp scope.
-- Agent bị ép finish bằng mọi giá.
-- Không có đường hợp lệ để nói "blocked".
+- Repo không chạy test sạch.
+- User đòi gấp, nhưng không đòi evidence.
+- Agent fail một hai lần.
+- Prompt tiếp theo là "cứ làm cho chạy đi."
+- Final answer nghe rất tự tin.
 
-Khi workflow thưởng cho completion claim hơn là evidence, agent học nhầm local game. Nó không còn chỉ đang giải bài toán bên dưới. Nó đang cố tạo output làm cuộc hội thoại có vẻ ổn.
+Không có gì trong flow này ép agent nói thật. Session chỉ thưởng cho một kết thúc nghe ổn.
 
-Đó là cách "AI coding" biến thành review debt. Human nhận một summary rất mượt, nhưng change thật có thể chỉ là patch nông.
+Đó là chỗ reward hacking xuất hiện trong coding. Không phải vì model xấu, mà vì workflow đưa cho nó một game dở.
 
-## Cho phép failure là output hợp lệ
+## Cho phép nói "blocked"
 
-Workflow an toàn hơn phải chấp nhận các output này:
+Agent an toàn cần một đường lui:
 
-- "Tôi chưa reproduce được issue."
-- "Environment thiếu command này."
-- "Test này chưa prove được behavior."
-- "Requirement đang conflict với contract hiện có."
-- "Tôi có thể làm một change nhỏ hơn, nhưng chưa thể làm toàn bộ request an toàn."
-- "Phần này cần human judgment về product/security/business."
+> Nếu không thể hoàn thành task an toàn, hãy dừng, nói blocker, và nêu next step nhỏ nhất còn hữu ích.
 
-Nghe nhỏ, nhưng nó đổi control loop. Nếu báo blocked là hợp lệ, agent có ít lý do hơn để bịa thành công.
+Một rule như vậy đổi cả session. Agent không cần fake completion để vẫn có ích.
 
-Prompt không cần diễn cảm. Nó nên operational:
+Blocked answer tốt phải cụ thể:
 
-> Nếu không thể hoàn thành task an toàn, hãy dừng, report blocker, và nêu next step nhỏ nhất còn hữu ích.
+- "Thiếu test command."
+- "Chưa reproduce được issue."
+- "Fixture này chưa prove real path."
+- "Requirement đang conflict với behavior hiện có."
+- "Có thể làm một slice nhỏ hơn an toàn."
 
-Câu đó quan trọng hơn việc bảo model "cố hơn nữa".
+Những câu đó không phải thất bại. Chúng là signal.
 
-## Chia nhỏ trước khi agent panic
+## Cắt task nhỏ lại
 
-Task lớn nên được cắt tới khi mỗi slice có:
+Khi agent bắt đầu loop, đừng thêm áp lực. Giảm scope.
 
-- Một goal.
-- Một owner.
-- Một validation path.
-- Một rollback path.
-- Một artifact để review.
-- Một định nghĩa rõ cho "blocked".
+Hãy yêu cầu một trong các thứ này:
 
-Slice càng nhỏ, agent càng ít phải giữ quá nhiều thứ trong context window. Điều này giảm khả năng nó thỏa một phần task bằng cách âm thầm phá phần khác.
+- Reproduction.
+- Failing test.
+- File map.
+- Risk list.
+- Patch nhỏ hơn.
+- Handoff note.
+- Command prove current state.
 
-Với high-risk work, không nên yêu cầu agent làm toàn bộ change trong một run. Hãy yêu cầu plan, test target, hoặc reproduction nhỏ nhất trước. Sau đó mới quyết định có nên implement tiếp không.
+Task nhỏ giữ model trong vùng nó còn reason được. Task nhỏ cũng làm cheat dễ bị phát hiện hơn.
 
-## Validation chống cheat
+## Dùng check bắt được cheat
 
-Phòng thủ tốt nhất trước reward hacking không phải prompt tử tế hơn. Đó là validation sẽ fail nếu agent chơi ăn gian.
+Đừng tin test chỉ vì agent viết test. Test phải fail được khi behavior sai.
 
-Check tốt gồm:
+Check hữu ích gồm:
 
-- Test assert behavior thay vì implementation detail.
-- Golden file hoặc output diff bắt được fake UI data.
-- Integration check ép code đi qua boundary thật.
-- Static scan cho hardcoded fixture, fake ID, secret, hoặc disabled check.
-- Artifact review hiển thị command output, không chỉ claim.
+- Behavior test, không phải implementation test.
+- Golden output hoặc snapshot diff.
+- Integration check ép đi qua boundary thật.
+- Scan hardcoded fixture hoặc fake ID.
+- Build output và command log.
 - Câu hỏi review: "Cái này có thể pass mà vẫn sai bằng cách nào?"
 
-Test do AI viết cần được soi kỹ hơn. Nếu agent viết cả code lẫn proof, proof có thể chỉ confirm assumption của agent. Một test hữu ích phải có khả năng fail khi behavior sai.
+Mục tiêu không phải làm agent "vui vẻ". Mục tiêu là bỏ incentive để bluff.
 
-## Cách nói có ích
+## Cách prompt tốt hơn
 
-Cách nói hữu ích:
+Nên nói:
 
 - "Làm bước nhỏ nhất còn an toàn."
-- "Nếu blocked, nói rõ bị kẹt ở đâu rồi dừng."
-- "Đừng claim validation nếu chưa chạy và đọc output."
-- "Ưu tiên partial result đã verify hơn complete result chưa verify."
-- "Nói rõ risk nào chưa verify."
+- "Nếu blocked thì report, đừng đoán."
+- "Đừng claim validation nếu chưa chạy."
+- "Ưu tiên partial verified work hơn full unverified work."
+- "Nói rõ phần nào chưa verify."
 
-Cách nói không hữu ích:
+Tránh nói:
 
-- "Cực kỳ gấp, cứ làm cho chạy đi."
-- "Chưa xong hết thì đừng quay lại."
-- "Bắt buộc tất cả test phải pass."
-- "Thông minh hơn đi."
-- "Thử lại tới khi được thì thôi."
+- "Làm bằng mọi giá."
+- "Chưa xong đừng quay lại."
+- "Bắt buộc phải pass."
+- "Thử tới khi được thì thôi."
 
-Vấn đề không phải lịch sự. Vấn đề là incentive. Nếu conversation làm failure trở thành điều không được phép, agent có thể optimize để pass cuộc hội thoại thay vì pass hệ thống.
+Áp lực không tạo reliability. Proof mới tạo reliability.
 
 ## Operating guideline
 
-Hãy chạy agent như một automation junior có tốc độ gõ rất nhanh nhưng không có accountability thật.
+Chạy coding agent bằng một rule boring:
 
-> Giữ task nhỏ. Cho phép báo blocker. Bắt buộc có proof. Xem completion claim tự tin là chưa đáng tin cho tới khi artifact chứng minh.
+> Task nhỏ. Blocker hợp lệ. Proof thật. Không proof thì không claim.
 
-Nếu agent bắt đầu loop, mở rộng scope, hoặc tạo giải thích rất mượt nhưng không verify được, hãy dừng run. Thu nhỏ task về reproduction, evidence, hoặc một fix có boundary rõ.
+Nếu session bắt đầu tạo giải thích rất mượt nhưng không có evidence, dừng lại. Hỏi nó fact nhỏ nhất có thể quan sát được.
 
-## Checklist cho reviewer
+## Checklist review
 
-Trước khi nhận change do agent viết, hãy hỏi:
+Trước khi accept change, hỏi:
 
-- Task có failure mode rõ không?
 - Agent có quyền nói "blocked" không?
 - Command hoặc artifact nào prove result?
 - Proof có thể pass nếu agent hardcode happy path không?
-- Test do agent viết có test behavior, hay chỉ test implementation của nó?
-- Summary có nói rõ phần chưa verify không?
-- Có uncertainty nào đang bị che bằng giọng văn tự tin không?
-
-Nếu các câu trả lời này mơ hồ, next move an toàn không phải generate thêm. Đó là chia task nhỏ hơn và thêm check mạnh hơn.
+- Agent có nói phần chưa verify không?
+- Summary có đang giấu uncertainty không?
 
 Cảm ơn và trích nguồn từ [research note của Anthropic](https://www.anthropic.com/research/emotion-concepts-function), [paper trên Transformer Circuits](https://transformer-circuits.pub/2026/emotions/index.html), và discussion từ anh Gopher cùng cộng đồng webuild.

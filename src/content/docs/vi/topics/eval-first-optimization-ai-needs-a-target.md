@@ -3,11 +3,11 @@ title: "08. Eval-first optimization: AI cần target trước khi chạy nhanh"
 description: Vì sao AI chỉ optimize tốt khi team đã có baseline, metric, fixture và rollback boundary rõ ràng.
 ---
 
-> Luận điểm chính: AI giỏi explore solution space, nhưng human phải định nghĩa trước "tốt hơn" nghĩa là gì.
+AI rất giỏi thử nhiều phương án. Nhưng điều đó chỉ có ích sau khi team định nghĩa "tốt hơn" nghĩa là gì.
 
-Một lỗi rất dễ gặp trong AI-assisted engineering là yêu cầu optimize trước khi định nghĩa target. Model vẫn sẽ tạo output. Nó có thể refactor, cache, parallelize, rewrite, hoặc simplify. Nhưng nếu chưa có baseline và evaluation harness, không ai biết change đó cải thiện hệ thống hay chỉ làm hệ thống khác đi.
+Nếu bảo agent "optimize cái này" mà chưa có target, nó vẫn sẽ làm gì đó. Nó có thể refactor, thêm cache, rewrite loop, đổi query, hoặc simplify function. Câu trả lời có thể nghe rất thuyết phục. Nhưng không có baseline và eval thì không ai biết hệ thống tốt lên hay chỉ đổi hình dạng.
 
-AI làm lỗi này đắt hơn vì nó có thể sinh ra rất nhiều phương án nghe hợp lý trong thời gian ngắn. Tốc độ đó hữu ích khi team có eval tốt. Nó là noise nếu team chỉ có cảm giác.
+AI làm lỗi này đắt hơn vì nó sinh được rất nhiều phương án nghe hợp lý trong thời gian ngắn. Tốc độ đó là leverage khi eval thật sự tồn tại. Nó là noise nếu team chỉ có cảm giác.
 
 ## Optimization cần contract
 
@@ -21,7 +21,7 @@ Trước khi yêu cầu agent optimize, cần định nghĩa:
 - Variance chấp nhận được là bao nhiêu?
 - Rollback path là gì nếu change sai?
 
-Nếu chưa trả lời được các câu này, "optimize cái này" chưa phải engineering task. Nó là lời mời tạo ra chuyển động tùy ý.
+Nếu chưa trả lời được các câu này, "optimize cái này" chưa phải engineering task. Nó mới là permission để tạo chuyển động.
 
 DORA 2025 AI-assisted software development report mô tả AI adoption thành công là systems problem, không phải chỉ là tools problem. Ghi chú của Martin Fowler từ Future of Software Development retreat cũng đi cùng hướng đó: AI có thể accelerate pipeline hiện có, kể cả các phần đang hỏng. Nếu team không có measurement discipline, AI sẽ accelerate uncertainty.
 
@@ -37,7 +37,7 @@ AI hữu ích ở phần search:
 - Explore data structure đơn giản hơn.
 - Tạo benchmark harness.
 
-Nhưng search chỉ có nghĩa nếu eval xếp hạng được các candidate. Nếu không, agent chỉ đang tạo option nghe có vẻ hợp lý.
+Search chỉ có nghĩa nếu eval xếp hạng được các candidate. Nếu không, agent chỉ đang tạo option nghe có vẻ hợp lý.
 
 Một eval tốt cho optimization thường có:
 
@@ -111,7 +111,7 @@ Pattern hữu ích:
 
 ## Operating guideline
 
-Hãy xem optimization là measurement problem trước khi xem nó là generation problem.
+Hãy xem optimization là measurement trước khi xem nó là generation.
 
 > Không có baseline thì không claim optimize. Không có fixture thì không claim performance. Không có correctness check thì không merge.
 

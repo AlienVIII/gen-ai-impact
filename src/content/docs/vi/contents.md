@@ -16,10 +16,13 @@ Trang này là mục lục public cho các topic đã publish.
 - [07. Model pressure: Giữ agent đủ calm để nói thật](../topics/model-pressure-agent-reward-hacking/)
 - [08. Eval-first optimization: AI cần target trước khi chạy nhanh](../topics/eval-first-optimization-ai-needs-a-target/)
 - [09. Context memory: Knowledge base cá nhân tốt hơn prompt dài](../topics/context-memory-is-engineering-infrastructure/)
-- [10. Forward-deployed engineering: AI kéo engineer gần business hơn](../topics/forward-deployed-engineering-business-context/)
-- [11. Tool hype: Đánh giá agent harness, đừng nhìn stars](../topics/tool-hype-and-agent-harness-evaluation/)
-- [12. OSS contribution bằng AI cần human ownership](../topics/ai-generated-open-source-contributions/)
-- [13. Cognitive debt: Giữ skill của human còn sống](../topics/cognitive-debt-and-joy-of-coding/)
+- [10. Chưng cất bản thân: Tự build knowledge base cho AI](../topics/personal-distillation-ai-knowledge-base/)
+- [11. Agent workflow: Task list, handoff, proof](../topics/agent-workflow-task-list-handoff-proof/)
+- [12. Source triage: Link chỉ là lead, chưa phải evidence](../topics/source-triage-links-are-not-evidence/)
+- [13. Forward-deployed engineering: AI kéo engineer gần business hơn](../topics/forward-deployed-engineering-business-context/)
+- [14. Tool hype: Đánh giá agent harness, đừng nhìn stars](../topics/tool-hype-and-agent-harness-evaluation/)
+- [15. OSS contribution bằng AI cần human ownership](../topics/ai-generated-open-source-contributions/)
+- [16. Cognitive debt: Giữ skill của human còn sống](../topics/cognitive-debt-and-joy-of-coding/)
 
 ## Tham khảo
 

@@ -1,11 +1,11 @@
 ---
-title: "12. AI-generated OSS Contributions Need Human Ownership"
+title: "15. AI-generated OSS Contributions Need Human Ownership"
 description: Why AI-assisted open source pull requests should be small, verified, respectful of maintainer time, and signed by accountable humans.
 ---
 
-> The main claim: using AI to prepare a contribution does not transfer review cost to maintainers. The contributor still owns the work.
+Using AI to prepare a contribution does not move ownership to the maintainer. The contributor still owns the work.
 
-Open source maintainers already work under limited attention. AI can make that worse by letting outsiders generate large, plausible, low-context pull requests quickly. Even when the intent is good, the result can be expensive for maintainers to review.
+Open source maintainers already work with limited attention. AI can make that worse by letting outsiders generate large, plausible, low-context pull requests quickly. Even when the intent is good, the result can be expensive to review.
 
 The problem is not "AI was used". The problem is low-ownership contribution.
 

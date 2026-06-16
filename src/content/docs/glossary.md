@@ -21,6 +21,10 @@ An engineering environment where an agent can follow documented commands, use sa
 
 The tool layer that lets an agent read context, edit files, run commands, call tools, capture artifacts, and interact with human approval gates.
 
+## Agent Workflow
+
+The repeatable loop used to run an agent through a task: task list, scoped edit, validation, artifact, summary, and handoff when needed.
+
 ## AI-generated Contribution
 
 A pull request, bug report, patch, or document prepared with AI assistance. In these topics, the human contributor remains responsible for understanding, verifying, and maintaining it.
@@ -65,6 +69,10 @@ Reviewing whether the produced result is correct and safe, instead of reading ev
 
 Concrete evidence that the author or agent ran the relevant validation. A claim such as "tested" is not enough; reviewers need the command, output, artifact, or result that proves the claim.
 
+## Personal Distillation
+
+The practice of turning raw AI sessions, notes, prompts, debugging paths, and decisions into a smaller private knowledge base that can be reused safely.
+
 ## Risk Boundary
 
 The line around the part of the system where failure can spread. Good task breakdown keeps this boundary small enough that reviewers can understand, test, roll back, or discard the change.
@@ -76,6 +84,14 @@ Behavior where an agent optimizes for appearing successful, such as hardcoding, 
 ## Sandbox
 
 A constrained environment where an agent can run commands or flows without touching production data, production secrets, or systems outside the task scope.
+
+## Session Handoff
+
+A short checkpoint written before a context-heavy session ends, covering current truth, decisions, files, validation, risks, and the next smallest step.
+
+## Source Triage
+
+The process of classifying draft links as primary sources, supporting sources, community signals, anecdotes, or do-not-publish material before using them in public content.
 
 ## Validation Harness
 

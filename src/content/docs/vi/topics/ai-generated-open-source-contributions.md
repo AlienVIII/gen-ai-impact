@@ -1,9 +1,9 @@
 ---
-title: "12. OSS contribution bằng AI cần human ownership"
+title: "15. OSS contribution bằng AI cần human ownership"
 description: Vì sao pull request open source có AI hỗ trợ phải nhỏ, đã verify, tôn trọng thời gian maintainer, và được human chịu trách nhiệm.
 ---
 
-> Luận điểm chính: dùng AI để chuẩn bị contribution không chuyển review cost sang maintainer. Contributor vẫn sở hữu work.
+Dùng AI để chuẩn bị contribution không chuyển ownership sang maintainer. Contributor vẫn sở hữu work.
 
 Open source maintainer vốn đã thiếu attention. AI có thể làm chuyện đó tệ hơn bằng cách cho người ngoài generate pull request lớn, nghe hợp lý, nhưng thiếu context rất nhanh. Kể cả khi intent tốt, result vẫn có thể rất đắt để review.
 

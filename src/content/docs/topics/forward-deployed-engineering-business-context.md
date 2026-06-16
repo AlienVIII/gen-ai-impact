@@ -1,11 +1,9 @@
 ---
-title: "10. Forward-deployed Engineering: AI Pushes Engineers Closer To The Work"
+title: "13. Forward-deployed Engineering: AI Pushes Engineers Closer To The Work"
 description: Why AI increases the value of engineers who understand business flow, data flow, constraints, and deployment reality.
 ---
 
-> The main claim: as AI reduces the cost of typing code, the scarce skill moves toward choosing the right problem and proving the right outcome.
-
-AI does not make engineering less important. It changes where engineering value concentrates.
+AI does not make engineering less important. It changes where engineering value shows up.
 
 When code generation becomes cheaper, teams feel the bottleneck move. The hard part is less often "can someone type this CRUD screen?" and more often:
 
@@ -16,7 +14,7 @@ When code generation becomes cheaper, teams feel the bottleneck move. The hard p
 - Which stakeholder can accept the risk?
 - Which part should become product and which part is one-off glue?
 
-This is why forward-deployed engineering is becoming more visible in AI conversations. The title is not the point. The pattern is.
+This is why forward-deployed engineering keeps coming up in AI conversations. The title is not the point. The pattern is: get close enough to the work to know what actually matters.
 
 ## The Pattern
 

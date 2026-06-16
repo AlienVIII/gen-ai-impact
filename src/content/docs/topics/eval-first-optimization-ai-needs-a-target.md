@@ -3,11 +3,11 @@ title: "08. Eval-first Optimization: AI Needs A Target Before It Can Go Fast"
 description: Why AI can optimize aggressively only after a team defines baselines, metrics, fixtures, and rollback boundaries.
 ---
 
-> The main claim: AI is good at exploring solution space, but only after humans define what "better" means.
+AI is very good at trying options. That is useful only after the team defines what "better" means.
 
-One of the easiest mistakes in AI-assisted engineering is to ask for optimization before defining the target. The model will still produce work. It may refactor, cache, parallelize, rewrite, or simplify. But without a baseline and an evaluation harness, nobody knows whether the work improved the system or merely changed it.
+If you ask an agent to "optimize this" without a target, it will still do something. It may refactor, add caching, rewrite a loop, change a query, or simplify a function. The answer may even sound convincing. But without a baseline and an eval, nobody knows whether the system improved or just changed shape.
 
-AI makes this mistake more expensive because it can generate many plausible alternatives quickly. That speed is useful when the team has a good eval. It is noise when the team only has vibes.
+AI makes this mistake more expensive because it can generate plausible alternatives quickly. That speed is leverage when the eval is real. It is noise when the team only has vibes.
 
 ## Optimization Needs A Contract
 
@@ -21,11 +21,11 @@ Before asking an agent to optimize, define:
 - What is the acceptable variance?
 - What rollback path exists if the change is wrong?
 
-Without those answers, "optimize this" is not an engineering task. It is an invitation to produce arbitrary motion.
+Without those answers, "optimize this" is not an engineering task yet. It is just permission to create motion.
 
 The DORA 2025 AI-assisted software development report frames successful AI adoption as a systems problem, not a tooling problem. Martin Fowler's notes from the Future of Software Development retreat make a similar point: AI can accelerate existing pipelines, including the broken parts. If the team has no measurement discipline, AI accelerates uncertainty.
 
-## The Eval Comes Before The Search
+## Eval Comes Before Search
 
 AI is useful at search:
 
@@ -37,7 +37,7 @@ AI is useful at search:
 - Explore simpler data structures.
 - Produce a benchmark harness.
 
-But search only matters if the eval can rank candidates. Otherwise, the agent is just producing options that sound reasonable.
+Search only matters if the eval can rank candidates. Otherwise, the agent is just producing options that sound reasonable.
 
 A good eval for optimization usually has:
 
@@ -111,7 +111,7 @@ A useful pattern:
 
 ## Operating Guideline
 
-Treat optimization as a measurement problem before treating it as a generation problem.
+Treat optimization as measurement before generation.
 
 > No baseline, no optimization claim. No fixture, no performance claim. No correctness check, no merge.
 

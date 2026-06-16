@@ -21,6 +21,10 @@ Môi trường engineering nơi agent có thể làm theo command đã document,
 
 Tool layer cho phép agent đọc context, sửa file, chạy command, gọi tools, capture artifact, và đi qua human approval gates.
 
+## Agent Workflow
+
+Vòng lặp lặp lại được để chạy agent qua một task: task list, scoped edit, validation, artifact, summary, và handoff khi cần.
+
 ## AI-generated Contribution
 
 Pull request, bug report, patch, hoặc document được chuẩn bị với AI assistance. Trong các topic này, human contributor vẫn chịu trách nhiệm hiểu, verify, và maintain nó.
@@ -65,6 +69,10 @@ Review kết quả cuối có đúng và an toàn không, thay vì đọc từng
 
 Bằng chứng cụ thể rằng author hoặc agent đã chạy validation liên quan. Claim kiểu "đã test" chưa đủ; reviewer cần command, output, artifact, hoặc result chứng minh claim đó.
 
+## Personal Distillation
+
+Thói quen biến raw AI sessions, notes, prompts, debugging paths, và decisions thành một private knowledge base nhỏ hơn để reuse an toàn.
+
 ## Risk Boundary
 
 Ranh giới quanh phần hệ thống nơi failure có thể lan ra. Task breakdown tốt giữ boundary đủ nhỏ để reviewer hiểu, test, rollback, hoặc vứt bỏ change.
@@ -76,6 +84,14 @@ Behavior nơi agent optimize để trông có vẻ thành công, ví dụ hardco
 ## Sandbox
 
 Môi trường bị giới hạn nơi agent có thể chạy command hoặc flow mà không chạm production data, production secrets, hoặc hệ thống ngoài scope của task.
+
+## Session Handoff
+
+Checkpoint ngắn được viết trước khi một session nặng context kết thúc, gồm current truth, decisions, files, validation, risks, và next smallest step.
+
+## Source Triage
+
+Quy trình phân loại draft links thành primary sources, supporting sources, community signals, anecdotes, hoặc do-not-publish material trước khi dùng trong public content.
 
 ## Validation Harness
 
