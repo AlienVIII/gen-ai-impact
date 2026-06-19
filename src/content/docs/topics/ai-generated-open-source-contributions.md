@@ -1,5 +1,5 @@
 ---
-title: "15. AI-generated OSS Contributions Need Human Ownership"
+title: "20. AI-generated OSS Contributions Need Human Ownership"
 description: Why AI-assisted open source pull requests should be small, verified, respectful of maintainer time, and signed by accountable humans.
 ---
 
@@ -88,6 +88,22 @@ For vulnerability reports:
 - Never publish exploit details before coordinated disclosure.
 
 If AI helped produce the report, the human reporter still owns accuracy.
+
+## Bug And CVE Reports Need More Care
+
+AI makes it easy to scan a project and produce a scary-looking report. That does not mean the report is useful.
+
+Before filing an issue or security report:
+
+- Check whether it is already reported.
+- Read the project security policy.
+- Reproduce the behavior.
+- Minimize the proof.
+- Explain impact without drama.
+- Offer a patch when possible.
+- Respect maintainer time.
+
+A low-quality AI report still costs a human maintainer real attention.
 
 ## Operating Guideline
 

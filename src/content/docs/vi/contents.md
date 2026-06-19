@@ -1,13 +1,13 @@
 ---
-title: "Mục lục"
-description: Mục lục topic cho Gen AI Impact.
+title: Mục lục
+description: Mục lục public cho các topic Gen AI Impact.
 ---
 
 Trang này là mục lục public cho các topic đã publish.
 
-## Topic
+## Topics
 
-- [01. Human-in-the-loop: Nghẽn cổ chai trong AI code review](../topics/human-in-the-loop-ai-code-review-bottleneck/)
+- [01. Human-in-the-loop: Điểm nghẽn AI code review](../topics/human-in-the-loop-ai-code-review-bottleneck/)
 - [02. Agent-ready environment: Prompt không scale, environment mới scale](../topics/agent-ready-environment-prompt-does-not-scale/)
 - [03. Risk-based delivery: Chia việc theo blast radius](../topics/risk-based-delivery-blast-radius/)
 - [04. Agent security boundary: Secrets, permissions, tools, MCP](../topics/agent-security-boundary-secrets-permissions-tools/)
@@ -16,13 +16,18 @@ Trang này là mục lục public cho các topic đã publish.
 - [07. Model pressure: Giữ agent đủ calm để nói thật](../topics/model-pressure-agent-reward-hacking/)
 - [08. Eval-first optimization: AI cần target trước khi chạy nhanh](../topics/eval-first-optimization-ai-needs-a-target/)
 - [09. Context memory: Knowledge base cá nhân tốt hơn prompt dài](../topics/context-memory-is-engineering-infrastructure/)
-- [10. Chưng cất bản thân: Tự build knowledge base cho AI](../topics/personal-distillation-ai-knowledge-base/)
-- [11. Agent workflow: Task list, handoff, proof](../topics/agent-workflow-task-list-handoff-proof/)
-- [12. Source triage: Link chỉ là lead, chưa phải evidence](../topics/source-triage-links-are-not-evidence/)
-- [13. Forward-deployed engineering: AI kéo engineer gần business hơn](../topics/forward-deployed-engineering-business-context/)
-- [14. Tool hype: Đánh giá agent harness, đừng nhìn stars](../topics/tool-hype-and-agent-harness-evaluation/)
-- [15. OSS contribution bằng AI cần human ownership](../topics/ai-generated-open-source-contributions/)
-- [16. Cognitive debt: Giữ skill của human còn sống](../topics/cognitive-debt-and-joy-of-coding/)
+- [10. Chưng cất bản thân: Raw history không phải memory](../topics/personal-distillation-ai-knowledge-base/)
+- [11. Agent workflow: Spec tree, gate, tiny PR](../topics/agent-workflow-task-list-handoff-proof/)
+- [12. Session handoff: Chuyển context, đừng chuyển transcript](../topics/session-handoff-context-migration/)
+- [13. Workslop specs: Document bóng bẩy vẫn có thể là rác](../topics/workslop-specs-ai-generated-documents/)
+- [14. Multi-repo agent workflow: Context đủ, permission không tràn](../topics/multi-repo-agent-workflow-boundary/)
+- [15. Design tokens: Đừng để frontend agent tự chế gu](../topics/design-tokens-frontend-ai-slop/)
+- [16. Tokenless automation: Bắt agent viết tool một lần](../topics/tokenless-automation-reusable-scripts/)
+- [17. AI metrics: Đốt token không phải impact](../topics/ai-metrics-token-burn-is-not-impact/)
+- [18. Forward-deployed engineering: AI kéo engineer gần business hơn](../topics/forward-deployed-engineering-business-context/)
+- [19. Tool hype: Đánh giá agent harness, đừng nhìn stars](../topics/tool-hype-and-agent-harness-evaluation/)
+- [20. OSS contribution bằng AI cần human ownership](../topics/ai-generated-open-source-contributions/)
+- [21. Cognitive debt: Giữ skill của human còn sống](../topics/cognitive-debt-and-joy-of-coding/)
 
 ## Tham khảo
 

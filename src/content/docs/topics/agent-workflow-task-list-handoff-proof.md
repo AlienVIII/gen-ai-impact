@@ -1,113 +1,140 @@
 ---
-title: "11. Agent Workflow: Task List, Handoff, Proof"
-description: A practical loop for using coding agents without turning every session into a long, vague, expensive conversation.
+title: "11. Agent Workflow: Spec Tree, Gates, Tiny PRs"
+description: A step-by-step agent workflow for keeping AI coding runs small, testable, and reviewable.
 ---
 
-The best agent workflow is usually not fancy. It is a small loop that keeps the agent oriented and keeps the human in control.
+The useful agent workflow in the draft is not a tool trick. It is a way to keep work small enough that the agent can execute and the human can still understand it.
 
-The draft version is simple:
+The shape is simple:
 
-1. Write the task list in Markdown.
-2. Let the agent work one item at a time.
-3. Make it check off completed items.
-4. Force it to run proof before claiming done.
-5. Write a handoff when context gets too large.
+1. Write the goal down.
+2. Scope it down.
+3. Break it into a spec tree.
+4. Run one slice at a time.
+5. Gate every slice with proof.
+6. Keep the diff small.
+7. Write a handoff before context gets heavy.
 
-This sounds basic because it is. That is why it works.
+This is boring. That is the point.
 
-## Why A Task List Works
+## Start With A Goal
 
-Agents drift when the goal is only in chat. A task list gives the session a physical object to inspect.
+A good run starts with one concrete goal, not a mood.
 
-Good task lists are short:
+Bad:
 
-- What needs to change.
-- What must not change.
-- Which files or areas are likely relevant.
-- Which command proves the result.
-- What "blocked" means.
+- "Improve the codebase."
+- "Make the app better."
+- "Port this whole thing."
 
-The task list is also useful for the human. It makes it clear whether the agent is finishing the task or just producing more motion.
+Better:
 
-## One Loop Per Slice
+- "Implement bz2 block parsing."
+- "Migrate this endpoint from Laravel to Node."
+- "Make this UI match the design tokens."
 
-Do not ask an agent to "fix everything" unless the scope is tiny.
+The goal should be small enough that proof is obvious. If proof is not obvious, the first task is to define proof.
 
-A safer loop:
+## Build A Spec Tree
 
-1. Pick one slice.
-2. Edit only what the slice needs.
-3. Run the relevant check.
-4. Read the output.
-5. Update the task list.
-6. Summarize what changed and what did not.
+For large work, do not write one giant spec. Use a tree:
 
-If the check fails, the next task is not "try random fixes." The next task is "understand why the check failed."
+1. Roadmap spec: what the whole project is trying to do.
+2. Milestone spec: what one phase must finish.
+3. Feature spec: what one slice changes.
+4. Task checklist: what the agent does now.
 
-## Handoff Before The Session Gets Heavy
+Each child should be smaller than its parent. Each leaf should have a gate.
 
-When the context is too large, stop and write a handoff.
+A feature spec should include:
 
-The handoff should answer:
+- Goal.
+- In scope.
+- Out of scope.
+- Files or areas likely involved.
+- Test fixture or validation command.
+- Done condition.
+- Known risks.
 
-- What is the goal?
-- What is true now?
-- What changed?
-- What passed?
-- What failed?
-- What decision was made?
-- What is the next smallest step?
+The `out of scope` section matters. It stops the agent from turning a small run into a rewrite.
 
-This is better than asking the next session to read a full transcript. The next session needs current truth, not every attempt.
+## Run One Slice
 
-## Proof Beats Confidence
+One agent run should install one small slice:
 
-Agents are good at sounding done. That is not enough.
+1. Read the relevant spec.
+2. Inspect the target files.
+3. Edit only what the slice needs.
+4. Run the gate.
+5. Record what passed and what did not.
+6. Stop or pick the next slice.
 
-Every workflow should make proof explicit:
+If the gate fails, do not keep pushing. The next slice is understanding the failure.
 
-- Build output.
-- Test output.
-- Screenshot.
-- Benchmark.
-- Diff summary.
-- Link check.
-- Security scan.
-- Manual test note.
+## Keep PRs Small
 
-For docs sites, proof may be only build plus output scan. For production services, it may require contract tests, staged rollout, and rollback notes. The proof should match the blast radius.
+The draft repeatedly points at tiny PRs and small commits for a reason. AI can produce a lot of code very quickly. That does not make a 100-file diff reviewable.
 
-## Keep Automation Bounded
+A practical target:
 
-Subagents, self-improvement loops, and agent-calls-agent workflows can be useful. They can also burn tokens and hide responsibility.
+- One behavior change.
+- One test fixture path.
+- One gate command.
+- A diff a human can review.
+- No opportunistic cleanup.
 
-Use them only when the boundary is clear:
+Small PRs are not bureaucracy. They are how the human stays in the loop.
 
-- One subagent explores sources.
-- One subagent reviews a diff.
-- One subagent writes a test plan.
-- A human merges the result.
+## Gate Before Claim
 
-Do not let agents recursively call each other without a budget, stop condition, and artifact.
+A gate is the proof required before the agent can say done.
+
+Examples:
+
+- Unit test for the changed behavior.
+- Build output for a docs site.
+- Fixture diff for a parser.
+- Screenshot for UI work.
+- Benchmark for optimization.
+- Security scan for permission changes.
+
+The gate should be written before the agent starts implementation. Otherwise the agent may optimize for a story instead of a result.
+
+## Handoff When Context Gets Heavy
+
+When the session is long, write a handoff before it gets confused.
+
+The handoff should say:
+
+- Goal.
+- Current truth.
+- Files changed.
+- Gates passed.
+- Gates failed.
+- Decisions made.
+- Out of scope.
+- Next smallest step.
+
+The next session needs current truth, not the full transcript.
 
 ## Operating Guideline
 
-Keep the workflow boring:
+Run agents like a small production system:
 
-> Task list first. Small slice next. Proof before claim. Handoff before context collapse.
+> Goal, spec tree, one slice, one gate, small diff, handoff.
 
-The goal is not to make the agent autonomous. The goal is to make the work traceable.
+Autonomy is not the win. Traceability is the win.
 
-## Workflow Checklist
+## Checklist
 
-Before starting an agent run, ask:
+Before starting a run, ask:
 
-- Is there a task list?
+- Is the goal written down?
 - Is the slice small enough?
-- What command proves this slice?
-- What should the agent do if blocked?
-- What artifact should it leave?
+- Is `out of scope` explicit?
+- What gate proves the slice?
+- Can the diff be reviewed by a human?
+- What should happen if the agent is blocked?
 - When should the session write a handoff?
-- What decision stays with the human?
 
 Thanks and source attribution to [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), and the discussion from anh Gopher and the webuild community.

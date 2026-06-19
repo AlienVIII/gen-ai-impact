@@ -1,90 +1,104 @@
 ---
-title: "10. Chưng cất bản thân: Tự build knowledge base cho AI"
-description: Cách engineer biến chat history, note debug, prompt và decision thành knowledge base riêng để làm việc với AI tốt hơn.
+title: "10. Chưng cất bản thân: Raw history không phải memory"
+description: Cách biến chat log, attempt sai, prompt và handoff thành context tái dùng được cho AI mà không publish mess private.
 ---
 
-Phần lớn AI session tạo ra nhiều chữ hơn value. Trong đó có rất nhiều noise: attempt sai, log dài, summary lịch sự, giải thích chỉ đúng một nửa. Nhưng trong đống đó vẫn có vài thứ đáng giữ.
+Một AI session thường để lại rất nhiều chữ. Một phần có ích. Phần lớn thì không.
 
-Chưng cất bản thân là thói quen giữ lại những thứ đáng giữ đó.
+Phần đáng giữ hiếm khi là nguyên transcript. Nó là command cuối cùng chạy được, constraint agent cứ quên, prompt nhỏ làm output ổn hơn, failure mode không muốn debug lại, và decision cần sống qua session sau.
 
-Không phải lưu mọi chat rồi lần sau paste lại nguyên cục. Làm vậy chỉ chuyển rác từ session cũ sang session mới. Cái cần giữ là decision, gotcha, command, pattern, constraint, và ví dụ mà future-you hoặc future-agent có thể reuse.
+Chưng cất bản thân là thói quen lấy phần đó ra.
 
-## Cái gì đáng chưng cất?
+Không phải gom mọi chat rồi nhét lại cho model lần sau. Làm vậy chỉ chuyển noise từ context window cũ sang context window mới. Cái cần làm là giữ raw material ở chỗ private, rồi viết một lớp nhỏ, human-readable, để future-you và future-agent dùng được.
 
-Đừng chưng cất mọi thứ. Chỉ giữ phần sẽ tốn công nếu phải mò lại:
+## Ba lớp đơn giản
 
-- Command cuối cùng chạy được.
-- Failure mode đã gặp hơn một lần.
-- Convention của project mà agent hay quên.
-- Prompt ngắn nhưng cho output ổn định hơn.
-- Benchmark, fixture, hoặc eval có ích.
-- Rule về business hoặc data không nhìn ra từ code.
+Một personal knowledge base đủ tốt có ba lớp:
+
+1. Raw archive.
+2. Distilled notes.
+3. Agent entrypoints.
+
+Raw archive được phép bừa. Nó có thể chứa exported chat, log dài, screenshot, dead end, handoff cũ. Giữ private. Đừng bắt agent đọc mặc định.
+
+Distilled notes là lớp có giá trị. Note nên ngắn, đặt tên rõ, viết như nói với một engineer đang mệt.
+
+Agent entrypoints là những file nhỏ nhất agent nên load trước: `AGENTS.md`, project map, current task note, hoặc handoff.
+
+## Cái gì đáng giữ
+
+Giữ thứ sẽ tốn công nếu phải mò lại:
+
+- Command prove project chạy được.
+- Failure mode lặp lại.
+- Rule không nhìn ra từ code.
+- Constraint về design hoặc business.
+- Benchmark, fixture, hoặc eval.
 - Review checklist từng bắt được bug thật.
-- Session handoff giúp run sau đỡ lạc.
+- Prompt cho output ổn định hơn.
+- Handoff giúp session sau đỡ lạc.
 
-Phần còn lại cứ để trong raw archive.
+Còn lại thì drop hoặc archive.
 
-## Stack đơn giản là đủ
+Một distilled note tốt không cần dài. Nó trả lời: cái gì đang đúng, vì sao quan trọng, verify bằng gì, và lần sau đừng lặp lại gì.
 
-Knowledge base cá nhân không cần phức tạp:
+## Vòng lặp năm phút
 
-- `index.md` làm bản đồ.
-- Note nhỏ theo từng vấn đề lặp lại.
-- Raw archive để ngoài public content.
-- Summary note link về raw material khi cần.
-- Project instruction như `AGENTS.md`.
-- Handoff template ngắn cho session dài.
+Sau một AI session có ích, làm việc này trước khi đóng máy:
 
-Lớp trên cùng nên đọc được trong một phút. Lớp raw có thể bừa. Đừng bắt mọi session load lớp raw mặc định.
+1. Lưu raw transcript hoặc log ở chỗ private.
+2. Viết ba bullet: đã đổi gì, cái gì work, cái gì fail.
+3. Copy đúng command đã prove result.
+4. Rút reusable rule thành note nhỏ.
+5. Link note đó vào index.
+6. Đánh dấu material nào private và không được publish.
+
+Vậy là đủ. Mục tiêu không phải wiki hoàn hảo. Mục tiêu là không trả lại cùng một discovery cost mỗi tuần.
+
+## Agent nên thấy gì
+
+Đừng feed agent nguyên archive. Feed nó một cái map.
+
+Entrypoint tốt nói rõ:
+
+- Goal là gì.
+- File nào liên quan.
+- Command nào validate work.
+- Assumption nào đã chốt.
+- Area nào private hoặc out of scope.
+- Next step nhỏ nhất là gì.
+
+Map nhỏ tốt hơn context dump lớn vì nó chỉ cho model biết điều gì cần bỏ qua.
 
 ## Private trước, public sau
 
-Một số note nên private. Chúng có thể chứa tên repo nội bộ, screenshot, customer context, đoạn chat, hoặc workflow cá nhân. Giữ chúng ngoài public docs.
+Chưng cất thường bắt đầu từ material private: chat export, tên repo, screenshot, customer detail, internal log, workflow cá nhân.
 
-Khi muốn publish, hãy rewrite thành principle:
+Khi biến thành bài public:
 
-- Xóa tên riêng.
-- Xóa screenshot nếu chưa redact.
-- Không đưa raw chat.
+- Xóa tên riêng và private link.
+- Không publish screenshot raw.
 - Đổi ví dụ private thành ví dụ generic.
-- Chỉ link nguồn public.
+- Chỉ cite nguồn public.
 - Attribution cộng đồng ở mức rộng nếu chưa có consent để nêu tên.
-
-Bản public nên truyền được ý tưởng mà không leak context đã sinh ra ý tưởng đó.
-
-## Vì sao agent làm tốt hơn?
-
-Agent làm tốt hơn nhiều khi bắt đầu từ một map sạch, thay vì một memory dump khổng lồ.
-
-Một note đã chưng cất nói cho agent:
-
-- Điều gì quan trọng.
-- Điều gì không nên lặp lại.
-- Command nào prove work.
-- File nào là canonical.
-- Source nào private và phải ignored.
-- Decision nào đã được chốt.
-
-Đó là lý do một wiki nhỏ do human viết thường hơn một prompt dài. Nó cho model điểm bắt đầu đáng tin, và cho human thứ có thể audit.
+- Giữ method, không giữ private context đã sinh ra method.
 
 ## Operating guideline
 
-Sau một AI session có ích, dành năm phút lấy ra phần đáng giữ.
+Treat raw history như source material, không phải memory.
 
-> Archive raw history. Chưng cất reusable knowledge. Feed agent bằng distilled map, không phải cả đống mess.
+> Archive mọi thứ ở private. Chưng cất phần làm thay đổi behavior lần sau. Feed agent bằng distilled map, không phải transcript.
 
-Nếu một note làm human mệt đọc không hiểu, nó chưa được chưng cất.
+Nếu một note quá dài để human skim trong một phút, nó có lẽ chưa được chưng cất.
 
-## Checklist chưng cất
+## Checklist
 
-Sau mỗi session, hỏi:
+Trước khi lưu note, hỏi:
 
-- Mình học được gì mà lần sau không muốn mò lại?
-- Command hoặc artifact nào prove result?
-- Mistake nào agent sau nên tránh?
-- Context nào private và phải local-only?
-- Phần nào nên vào project docs?
-- Phần nào nên vào wiki cá nhân?
-- Raw material nào có thể archive nhưng không cần load?
+- Note này có giúp session sau start nhanh hơn không?
+- Nó có command hoặc artifact prove claim không?
+- Private material đã được loại rõ chưa?
+- Đây là reusable rule, hay chỉ là một cuộc nói chuyện cũ?
+- Human có hiểu được mà không cần đọc raw chat không?
 
 Cảm ơn và trích nguồn từ [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), và discussion từ anh Gopher cùng cộng đồng webuild.

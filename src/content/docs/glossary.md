@@ -89,10 +89,6 @@ A constrained environment where an agent can run commands or flows without touch
 
 A short checkpoint written before a context-heavy session ends, covering current truth, decisions, files, validation, risks, and the next smallest step.
 
-## Source Triage
-
-The process of classifying draft links as primary sources, supporting sources, community signals, anecdotes, or do-not-publish material before using them in public content.
-
 ## Validation Harness
 
 The set of commands, fixtures, and checks that prove a change is buildable, testable, and safe enough for review.
@@ -104,3 +100,23 @@ The practice of giving an agent, tool, token, or human only the permissions requ
 ## Supply Chain Risk
 
 Risk introduced through dependencies, build tools, generated code, package registries, plugins, MCP servers, or other components outside the direct source change.
+
+## Workslop
+
+Polished AI-generated work that looks complete but lacks the substance needed to move a task forward.
+
+## Spec Tree
+
+A hierarchy of roadmap, milestone, feature, and task specs that keeps agent work small and traceable.
+
+## Tokenless Automation
+
+A pattern where AI writes a reusable script or command once so repeated work can run without further model calls.
+
+## Multi-repo Boundary
+
+The explicit rule set that tells an agent which repositories are editable, which are read-only context, and which validation proves cross-repo compatibility.
+
+## Design Tokens
+
+Named design decisions such as color, spacing, typography, and radius values that let tools and agents use a shared UI vocabulary.

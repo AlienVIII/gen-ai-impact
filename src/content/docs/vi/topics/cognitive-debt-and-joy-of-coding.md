@@ -1,5 +1,5 @@
 ---
-title: "16. Cognitive debt: Giữ skill của human còn sống"
+title: "21. Cognitive debt: Giữ skill của human còn sống"
 description: Cách AI assistance quá nặng có thể làm giảm persistence, taste và learning nếu engineer ngừng đọc, ngừng vật lộn, và ngừng sở hữu craft.
 ---
 

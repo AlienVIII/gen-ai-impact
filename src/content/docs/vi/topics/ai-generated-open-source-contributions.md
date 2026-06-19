@@ -1,5 +1,5 @@
 ---
-title: "15. OSS contribution bằng AI cần human ownership"
+title: "20. OSS contribution bằng AI cần human ownership"
 description: Vì sao pull request open source có AI hỗ trợ phải nhỏ, đã verify, tôn trọng thời gian maintainer, và được human chịu trách nhiệm.
 ---
 
@@ -88,6 +88,22 @@ Với vulnerability report:
 - Không publish exploit detail trước coordinated disclosure.
 
 Nếu AI hỗ trợ tạo report, human reporter vẫn sở hữu accuracy.
+
+## Bug và CVE report cần cẩn thận hơn
+
+AI làm việc scan project và sinh report nghe rất đáng sợ trở nên dễ. Điều đó không có nghĩa report hữu ích.
+
+Trước khi file issue hoặc security report:
+
+- Check xem đã có report chưa.
+- Đọc security policy của project.
+- Reproduce behavior.
+- Thu nhỏ proof.
+- Giải thích impact không drama.
+- Offer patch nếu có thể.
+- Tôn trọng thời gian maintainer.
+
+Một AI report chất lượng thấp vẫn đốt attention thật của maintainer.
 
 ## Operating guideline
 

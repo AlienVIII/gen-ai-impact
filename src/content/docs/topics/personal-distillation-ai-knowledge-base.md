@@ -1,90 +1,104 @@
 ---
-title: "10. Personal Distillation: Build Your Own AI Knowledge Base"
-description: How engineers can turn chat history, debugging notes, prompts, and project decisions into a private knowledge base that makes AI work better.
+title: "10. Personal Distillation: Raw History Is Not Memory"
+description: A practical way to turn chat logs, failed attempts, prompts, and handoffs into reusable AI context without publishing private mess.
 ---
 
-Most AI sessions produce more text than value. A lot of it is noise: failed attempts, long logs, polite summaries, half-correct explanations. But hidden inside that mess are the pieces that make future work easier.
+Most AI sessions leave behind a pile of text. Some of it is useful. Most of it is not.
 
-Personal distillation is the habit of keeping those useful pieces.
+The useful part is rarely the full transcript. It is the command that finally worked, the constraint the agent kept forgetting, the small prompt that made the output better, the failure mode you do not want to debug again, and the decision that should survive the session.
 
-It is not "save every chat forever and paste it back later." That only moves the mess to a new session. The point is to extract what should survive: decisions, gotchas, commands, patterns, constraints, and examples that your future self or future agent can reuse.
+Personal distillation is the habit of extracting that part.
 
-## What Is Worth Distilling
+It is not hoarding every chat and feeding it back to the next model. That just moves noise from one context window into another. The point is to keep raw material somewhere private, then write a small human-readable layer that future-you and future-agent can actually use.
 
-Do not distill everything. Distill the things that would be expensive to rediscover:
+## The Three Layers
 
-- A command that finally worked.
-- A failure mode you hit twice.
-- A project convention that agents keep missing.
-- A short prompt that consistently gives better output.
-- A benchmark, fixture, or eval that proved useful.
-- A business or data rule that is not obvious from code.
+A simple personal knowledge base has three layers:
+
+1. Raw archive.
+2. Distilled notes.
+3. Agent entrypoints.
+
+Raw archive is allowed to be messy. It can contain exported chats, long logs, screenshots, dead ends, and old handoffs. Keep it private. Do not make agents read it by default.
+
+Distilled notes are the useful layer. They should be short, named clearly, and written like notes to a tired engineer.
+
+Agent entrypoints are the smallest files an agent should load first: `AGENTS.md`, a project map, a current task note, or a handoff.
+
+## What To Keep
+
+Keep anything that would be expensive to rediscover:
+
+- The command that proves the project works.
+- A recurring failure mode.
+- A rule that is not obvious from code.
+- A design or business constraint.
+- A benchmark, fixture, or eval.
 - A review checklist that caught a real bug.
-- A session handoff that saved the next run.
+- A prompt that consistently improves output.
+- A handoff that saved the next session.
 
-Everything else can stay in raw archive.
+Drop or archive the rest.
 
-## A Simple Stack
+A good distilled note is not long. It answers: what is true, why it matters, how to verify it, and what not to repeat.
 
-A useful personal knowledge base can be boring:
+## A Five-Minute Distillation Loop
 
-- `index.md` for the map.
-- Small topic notes for repeated problems.
-- Raw archives kept outside public content.
-- Links from summary notes to raw material.
-- Project-local instructions such as `AGENTS.md`.
-- A short handoff template for long sessions.
+After a useful AI session, do this before closing the laptop:
 
-The top layer should be readable by a human in one minute. The raw layer can be messy. Do not make every session read the raw layer by default.
+1. Save the raw transcript or log privately.
+2. Write three bullets: what changed, what worked, what failed.
+3. Copy the exact commands that proved the result.
+4. Extract any reusable rule into a small note.
+5. Link the note from an index.
+6. Mark private material that must never be published.
+
+That is enough. The goal is not a perfect wiki. The goal is to stop paying the same discovery cost every week.
+
+## What The Agent Should See
+
+Do not feed agents the whole archive. Feed them a map.
+
+A good entrypoint says:
+
+- This is the goal.
+- These are the relevant files.
+- These commands validate the work.
+- These assumptions are already decided.
+- These areas are private or out of scope.
+- This is the next smallest step.
+
+That small map beats a huge context dump because it tells the model what to ignore.
 
 ## Private First, Public Later
 
-Some notes are private by design. They may include internal repo names, screenshots, customer context, chat fragments, or personal workflow details. Keep that material outside public docs.
+Distillation often starts from private material: chat exports, repo names, screenshots, customer details, internal logs, and personal workflow notes.
 
-When a note becomes public, rewrite it as a principle:
+When turning it into public writing:
 
-- Remove names.
-- Remove screenshots unless redacted.
-- Remove raw chat.
+- Remove names and private links.
+- Do not publish raw screenshots.
 - Replace private examples with generic examples.
-- Link only public sources.
-- Keep community attribution broad unless people agreed to be named.
-
-The public version should teach the idea without leaking the context that produced it.
-
-## How It Helps Agents
-
-Agents are much better when they start from a clean map instead of a giant memory dump.
-
-A distilled note gives the agent:
-
-- What matters.
-- What not to repeat.
-- Which command proves the work.
-- Which files are canonical.
-- Which source is private and must stay ignored.
-- Which decision already happened.
-
-This is why a small human-written wiki often beats a long prompt. It gives the model a reliable starting point and gives the human something they can audit.
+- Cite only public sources.
+- Attribute community discussion broadly unless people agreed to be named.
+- Keep the method, not the private context that produced it.
 
 ## Operating Guideline
 
-After a useful AI session, spend five minutes extracting the part worth keeping.
+Treat raw history as source material, not memory.
 
-> Archive raw history. Distill reusable knowledge. Feed agents the distilled map, not the whole mess.
+> Archive everything privately. Distill only what changes future behavior. Feed agents the distilled map, not the transcript.
 
-If a note cannot be read by a tired human, it is not distilled yet.
+If a note is too long for a human to skim in one minute, it is probably not distilled yet.
 
-## Distillation Checklist
+## Checklist
 
-After a session, ask:
+Before saving a note, ask:
 
-- What did I learn that I would hate to rediscover?
-- Which command or artifact proved the result?
-- Which mistake should the next agent avoid?
-- Which context is private and must stay local?
-- Which part belongs in project docs?
-- Which part belongs in my private wiki?
-- Which raw material can stay archived but unloaded?
+- Will this help a future session start faster?
+- Does it contain the command or artifact that proves the claim?
+- Is the private material clearly excluded?
+- Is this a reusable rule, or just an old conversation?
+- Can a human understand it without reading the raw chat?
 
 Thanks and source attribution to [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), and the discussion from anh Gopher and the webuild community.

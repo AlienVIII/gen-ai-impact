@@ -1,113 +1,140 @@
 ---
-title: "11. Agent workflow: Task list, handoff, proof"
-description: Một vòng lặp thực dụng để dùng coding agent mà không biến mọi session thành cuộc nói chuyện dài, mơ hồ, và tốn token.
+title: "11. Agent workflow: Spec tree, gate, tiny PR"
+description: Một workflow step-by-step để giữ AI coding run nhỏ, test được, và review được.
 ---
 
-Agent workflow tốt thường không màu mè. Nó là một vòng lặp nhỏ giúp agent không lạc và giúp human vẫn cầm lái.
+Agent workflow đáng chú ý trong draft không phải trick của tool. Nó là cách giữ work đủ nhỏ để agent làm được và human vẫn hiểu được.
 
-Bản nháp rất đơn giản:
+Shape đơn giản:
 
-1. Viết task list bằng Markdown.
-2. Cho agent làm từng item.
-3. Xong item nào thì check vào list.
-4. Bắt chạy proof trước khi claim done.
-5. Khi context phình, viết handoff.
+1. Viết goal xuống.
+2. Scope down.
+3. Chia thành spec tree.
+4. Chạy từng slice.
+5. Mỗi slice có gate prove.
+6. Giữ diff nhỏ.
+7. Viết handoff trước khi context nặng.
 
-Nghe cơ bản vì nó đúng là cơ bản. Chính vì vậy nó chạy được.
+Nghe boring. Đúng vậy. Boring mới chạy được.
 
-## Vì sao task list hiệu quả?
+## Bắt đầu bằng goal
 
-Agent dễ drift nếu goal chỉ nằm trong chat. Task list tạo ra một object cụ thể để session inspect.
+Một run tốt bắt đầu bằng một goal cụ thể, không phải một cảm giác.
 
-Task list tốt nên ngắn:
+Tệ:
 
-- Cần đổi gì.
-- Không được đổi gì.
-- File hoặc area nào có khả năng liên quan.
-- Command nào prove result.
-- Khi nào được gọi là blocked.
+- "Improve codebase."
+- "Làm app tốt hơn."
+- "Port hết cái này."
 
-Task list cũng giúp human. Nhìn vào đó sẽ biết agent đang finish task hay chỉ tạo thêm chuyển động.
+Tốt hơn:
 
-## Mỗi slice một vòng lặp
+- "Implement bz2 block parsing."
+- "Migrate endpoint này từ Laravel sang Node."
+- "Làm UI này match design tokens."
 
-Đừng bảo agent "fix hết đi" trừ khi scope thật sự nhỏ.
+Goal phải nhỏ tới mức proof nhìn ra được. Nếu chưa thấy proof, task đầu tiên là định nghĩa proof.
 
-Loop an toàn hơn:
+## Dựng spec tree
 
-1. Chọn một slice.
-2. Chỉ sửa phần slice đó cần.
-3. Chạy check liên quan.
-4. Đọc output.
-5. Update task list.
-6. Tóm tắt đã đổi gì và chưa đổi gì.
+Với việc lớn, đừng viết một spec khổng lồ. Dùng cây:
 
-Nếu check fail, next task không phải "thử sửa bừa". Next task là "hiểu vì sao check fail".
+1. Roadmap spec: cả project muốn đi đâu.
+2. Milestone spec: một phase phải xong gì.
+3. Feature spec: một slice đổi gì.
+4. Task checklist: agent làm gì ngay bây giờ.
 
-## Handoff trước khi session quá nặng
+Mỗi node con phải nhỏ hơn node cha. Mỗi leaf phải có gate.
 
-Khi context quá lớn, dừng lại và viết handoff.
+Một feature spec nên có:
 
-Handoff nên trả lời:
+- Goal.
+- In scope.
+- Out of scope.
+- File hoặc area có khả năng liên quan.
+- Test fixture hoặc validation command.
+- Done condition.
+- Risk đã biết.
 
-- Goal là gì?
-- Current truth là gì?
-- Đã đổi gì?
-- Cái gì pass?
-- Cái gì fail?
-- Decision nào đã chốt?
-- Next step nhỏ nhất là gì?
+`Out of scope` rất quan trọng. Nó chặn agent biến một run nhỏ thành rewrite.
 
-Cách này tốt hơn bắt session sau đọc full transcript. Session sau cần current truth, không cần mọi attempt.
+## Chạy một slice
 
-## Proof hơn confidence
+Một agent run chỉ nên cài một slice nhỏ:
 
-Agent rất giỏi nói như đã xong. Chưa đủ.
+1. Đọc spec liên quan.
+2. Inspect file mục tiêu.
+3. Chỉ sửa phần slice cần.
+4. Chạy gate.
+5. Ghi lại cái gì pass và cái gì fail.
+6. Dừng hoặc chọn slice kế tiếp.
 
-Workflow nên explicit proof:
+Nếu gate fail, đừng cố đẩy tiếp. Slice kế tiếp là hiểu vì sao fail.
 
-- Build output.
-- Test output.
-- Screenshot.
-- Benchmark.
-- Diff summary.
-- Link check.
-- Security scan.
-- Manual test note.
+## Giữ PR nhỏ
 
-Với docs site, proof có thể chỉ là build và output scan. Với production service, proof có thể cần contract tests, staged rollout, và rollback note. Proof phải match blast radius.
+Draft nhắc nhiều tới tiny PR và small commit vì AI có thể sinh code rất nhanh. Nhưng sinh nhanh không làm diff 100 file review được.
 
-## Giữ automation có boundary
+Target thực dụng:
 
-Subagents, self-improvement loop, và agent gọi agent có thể hữu ích. Chúng cũng có thể đốt token và làm mờ trách nhiệm.
+- Một behavior change.
+- Một test fixture path.
+- Một gate command.
+- Diff human review được.
+- Không cleanup opportunistic.
 
-Chỉ dùng khi boundary rõ:
+Small PR không phải thủ tục. Nó là cách human vẫn ở trong loop.
 
-- Một subagent explore sources.
-- Một subagent review diff.
-- Một subagent viết test plan.
-- Human merge result.
+## Gate trước khi claim
 
-Đừng để agent gọi nhau đệ quy nếu không có budget, stop condition, và artifact.
+Gate là proof cần có trước khi agent được nói done.
+
+Ví dụ:
+
+- Unit test cho behavior đã đổi.
+- Build output cho docs site.
+- Fixture diff cho parser.
+- Screenshot cho UI.
+- Benchmark cho optimization.
+- Security scan cho permission change.
+
+Gate nên được viết trước khi implement. Nếu không, agent dễ optimize cho một câu chuyện nghe hợp lý thay vì kết quả thật.
+
+## Handoff khi context nặng
+
+Khi session dài, viết handoff trước khi nó bắt đầu lạc.
+
+Handoff nên nói:
+
+- Goal.
+- Current truth.
+- File đã đổi.
+- Gate đã pass.
+- Gate đã fail.
+- Decision đã chốt.
+- Out of scope.
+- Next smallest step.
+
+Session sau cần current truth, không cần full transcript.
 
 ## Operating guideline
 
-Giữ workflow boring:
+Chạy agent như một production system nhỏ:
 
-> Task list trước. Slice nhỏ tiếp theo. Proof trước claim. Handoff trước khi context sập.
+> Goal, spec tree, một slice, một gate, diff nhỏ, handoff.
 
-Mục tiêu không phải làm agent tự trị. Mục tiêu là làm work traceable.
+Autonomy không phải điểm thắng. Traceability mới là điểm thắng.
 
-## Checklist workflow
+## Checklist
 
-Trước khi mở agent run, hỏi:
+Trước khi mở run, hỏi:
 
-- Có task list chưa?
+- Goal đã viết xuống chưa?
 - Slice đã đủ nhỏ chưa?
-- Command nào prove slice này?
+- `Out of scope` đã rõ chưa?
+- Gate nào prove slice này?
+- Diff human review được không?
 - Nếu blocked thì agent phải làm gì?
-- Artifact nào cần để lại?
 - Khi nào session phải viết handoff?
-- Decision nào vẫn thuộc về human?
 
 Cảm ơn và trích nguồn từ [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), và discussion từ anh Gopher cùng cộng đồng webuild.
