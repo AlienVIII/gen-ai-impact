@@ -119,4 +119,4 @@ For teams:
 
 If AI use increases speed while reducing understanding, the team is borrowing against future judgment.
 
-Thanks and source attribution to [AI Assistance Reduces Persistence and Hurts Independent Performance](https://arxiv.org/html/2604.04721v2), [Martin Fowler's Future of Software Development notes](https://martinfowler.com/fragments/2026-02-18.html), the [DORA 2025 State of AI-assisted Software Development report](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: [AI Assistance Reduces Persistence and Hurts Independent Performance](https://arxiv.org/html/2604.04721v2), [Martin Fowler's Future of Software Development notes](https://martinfowler.com/fragments/2026-02-18.html), the [DORA 2025 State of AI-assisted Software Development report](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), and discussion from the webuild community.

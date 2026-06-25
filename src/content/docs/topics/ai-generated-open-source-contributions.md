@@ -129,4 +129,4 @@ Before opening an AI-assisted PR, ask:
 
 If the honest answer is no, keep working locally.
 
-Thanks and source attribution to the [ITK maintainer discussion on AI-generated pull requests](https://discourse.itk.org/t/ai-generated-pull-requests-overwhelming-hard-to-review-carefully/7728), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: the [ITK maintainer discussion on AI-generated pull requests](https://discourse.itk.org/t/ai-generated-pull-requests-overwhelming-hard-to-review-carefully/7728), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), and discussion from the webuild community.

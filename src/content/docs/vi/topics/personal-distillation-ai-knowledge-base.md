@@ -101,4 +101,4 @@ Trước khi lưu note, hỏi:
 - Đây là reusable rule, hay chỉ là một cuộc nói chuyện cũ?
 - Human có hiểu được mà không cần đọc raw chat không?
 
-Cảm ơn và trích nguồn từ [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), và discussion từ cộng đồng webuild.

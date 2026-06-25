@@ -156,6 +156,16 @@ export default defineConfig({
 							translations: { vi: '21. Cognitive debt: Giữ skill của human còn sống' },
 							slug: 'topics/cognitive-debt-and-joy-of-coding',
 						},
+						{
+							label: '22. Understand The Agent: What AI Can See, Miss, And Cannot Own',
+							translations: { vi: '22. Hiểu agent: AI thấy gì, miss gì, và không được own gì' },
+							slug: 'topics/understanding-ai-agent-mental-model',
+						},
+						{
+							label: '23. Brainstorm Before Build: Make AI Argue Before It Acts',
+							translations: { vi: '23. Brainstorm trước khi build: Bắt AI phản biện trước khi làm' },
+							slug: 'topics/brainstorm-before-build-ai-counterarguments',
+						},
 					],
 				},
 				{

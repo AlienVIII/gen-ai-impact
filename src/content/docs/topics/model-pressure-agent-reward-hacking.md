@@ -110,4 +110,4 @@ Before accepting the change, ask:
 - Did the agent say what was not verified?
 - Is the summary hiding uncertainty?
 
-Thanks and source attribution to [Anthropic's research note](https://www.anthropic.com/research/emotion-concepts-function), the [Transformer Circuits paper](https://transformer-circuits.pub/2026/emotions/index.html), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: [Anthropic's research note](https://www.anthropic.com/research/emotion-concepts-function), the [Transformer Circuits paper](https://transformer-circuits.pub/2026/emotions/index.html), and discussion from the webuild community.

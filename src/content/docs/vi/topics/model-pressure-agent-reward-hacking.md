@@ -110,4 +110,4 @@ Trước khi accept change, hỏi:
 - Agent có nói phần chưa verify không?
 - Summary có đang giấu uncertainty không?
 
-Cảm ơn và trích nguồn từ [research note của Anthropic](https://www.anthropic.com/research/emotion-concepts-function), [paper trên Transformer Circuits](https://transformer-circuits.pub/2026/emotions/index.html), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [research note của Anthropic](https://www.anthropic.com/research/emotion-concepts-function), [paper trên Transformer Circuits](https://transformer-circuits.pub/2026/emotions/index.html), và discussion từ cộng đồng webuild.

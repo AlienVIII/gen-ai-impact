@@ -114,4 +114,4 @@ Trước khi mở AI session mới, hãy hỏi:
 
 Nếu câu trả lời là "paste toàn bộ chat", memory system đang thiếu.
 
-Cảm ơn và trích nguồn từ [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), và discussion từ cộng đồng webuild.

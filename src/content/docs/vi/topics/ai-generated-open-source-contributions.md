@@ -129,4 +129,4 @@ Trước khi mở AI-assisted PR, hãy hỏi:
 
 Nếu câu trả lời thật lòng là không, hãy giữ work ở local.
 
-Cảm ơn và trích nguồn từ [discussion của maintainer ITK về AI-generated pull requests](https://discourse.itk.org/t/ai-generated-pull-requests-overwhelming-hard-to-review-carefully/7728), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [discussion của maintainer ITK về AI-generated pull requests](https://discourse.itk.org/t/ai-generated-pull-requests-overwhelming-hard-to-review-carefully/7728), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), và discussion từ cộng đồng webuild.

@@ -200,4 +200,4 @@ Câu hỏi đáng thảo luận tiếp:
 - Action nào cần human gate không thể bỏ qua?
 - Dependency policy nào nên automate trước?
 
-Cảm ơn và trích nguồn từ [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [OpenSSF Scorecard](https://scorecard.dev/), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), và discussion từ cộng đồng webuild.
+Nguồn và attribution cộng đồng: [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [OpenSSF Scorecard](https://scorecard.dev/), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), và discussion từ cộng đồng webuild.

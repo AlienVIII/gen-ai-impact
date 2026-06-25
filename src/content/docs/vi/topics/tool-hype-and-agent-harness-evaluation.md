@@ -103,4 +103,4 @@ Trước khi dùng AI agent tool, hãy hỏi:
 
 Nếu câu trả lời chủ yếu là "tin tool đi", tool chưa ready.
 
-Cảm ơn và trích nguồn từ [ICSE 2026 fake-star study listing](https://conf.researchr.org/details/icse-2026/icse-2026-research-track/14/Six-Million-Suspected-Fake-Stars-on-GitHub-A-Growing-Spiral-of-Popularity-Contests), [OpenSSF Scorecard](https://scorecard.dev/), [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [ICSE 2026 fake-star study listing](https://conf.researchr.org/details/icse-2026/icse-2026-research-track/14/Six-Million-Suspected-Fake-Stars-on-GitHub-A-Growing-Spiral-of-Popularity-Contests), [OpenSSF Scorecard](https://scorecard.dev/), [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), và discussion từ cộng đồng webuild.

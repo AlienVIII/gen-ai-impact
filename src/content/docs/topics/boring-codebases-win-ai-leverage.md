@@ -184,4 +184,4 @@ Questions worth discussing:
 - Which file is too large for safe agent edits?
 - Which small refactor would reduce review cost the most?
 
-Thanks and source attribution to [DORA](https://dora.dev/), [DORA 2024](https://dora.dev/research/2024/dora-report/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), and the webuild discussion.
+Sources and community attribution: [DORA](https://dora.dev/), [DORA 2024](https://dora.dev/research/2024/dora-report/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), and the webuild discussion.

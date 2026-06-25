@@ -133,4 +133,4 @@ Trước khi accept AI optimization, hãy hỏi:
 
 Nếu câu trả lời chủ yếu là prose, change chưa ready.
 
-Cảm ơn và trích nguồn từ [DORA 2025 State of AI-assisted Software Development report](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [ghi chú Future of Software Development của Martin Fowler](https://martinfowler.com/fragments/2026-02-18.html), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [DORA 2025 State of AI-assisted Software Development report](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [ghi chú Future of Software Development của Martin Fowler](https://martinfowler.com/fragments/2026-02-18.html), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), và discussion từ cộng đồng webuild.

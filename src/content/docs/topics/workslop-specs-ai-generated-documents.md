@@ -96,4 +96,4 @@ Before handing a spec to engineering, ask:
 - Who owns unresolved questions?
 - Could a teammate estimate this without a meeting?
 
-Thanks and source attribution to [HBR on AI-generated workslop](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: [HBR on AI-generated workslop](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), and discussion from the webuild community.

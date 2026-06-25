@@ -204,4 +204,4 @@ Questions worth discussing:
 - Which critical paths still require 100% human review?
 - Which environment is still manual and prevents the agent from proving its work?
 
-Thanks and source attribution to Gopher and the webuild members.
+Sources and community attribution: the webuild community.

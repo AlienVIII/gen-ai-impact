@@ -90,4 +90,4 @@ Before reporting an AI productivity metric, ask:
 - Does it show long-term maintainability risk?
 - Would this metric still look good after an incident?
 
-Thanks and source attribution to [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [HBR on AI-generated workslop](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [HBR on AI-generated workslop](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity), and discussion from the webuild community.

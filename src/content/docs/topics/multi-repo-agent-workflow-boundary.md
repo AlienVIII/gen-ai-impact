@@ -121,4 +121,4 @@ Before a multi-repo run, ask:
 - Does the agent know where not to edit?
 - What should it report before crossing the boundary?
 
-Thanks and source attribution to the [Claude Code CLI reference](https://code.claude.com/docs/en/cli-reference), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: the [Claude Code CLI reference](https://code.claude.com/docs/en/cli-reference), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), and discussion from the webuild community.

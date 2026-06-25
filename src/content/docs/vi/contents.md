@@ -28,6 +28,8 @@ Trang này là mục lục public cho các topic đã publish.
 - [19. Tool hype: Đánh giá agent harness, đừng nhìn stars](../topics/tool-hype-and-agent-harness-evaluation/)
 - [20. OSS contribution bằng AI cần human ownership](../topics/ai-generated-open-source-contributions/)
 - [21. Cognitive debt: Giữ skill của human còn sống](../topics/cognitive-debt-and-joy-of-coding/)
+- [22. Hiểu agent: AI thấy gì, miss gì, và không được own gì](../topics/understanding-ai-agent-mental-model/)
+- [23. Brainstorm trước khi build: Bắt AI phản biện trước khi làm](../topics/brainstorm-before-build-ai-counterarguments/)
 
 ## Tham khảo
 

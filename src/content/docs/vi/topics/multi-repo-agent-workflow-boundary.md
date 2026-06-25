@@ -121,4 +121,4 @@ Trước multi-repo run, hỏi:
 - Agent có biết không được edit đâu không?
 - Nó phải report gì trước khi vượt boundary?
 
-Cảm ơn và trích nguồn từ [Claude Code CLI reference](https://code.claude.com/docs/en/cli-reference), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [Claude Code CLI reference](https://code.claude.com/docs/en/cli-reference), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), và discussion từ cộng đồng webuild.

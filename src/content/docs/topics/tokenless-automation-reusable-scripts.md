@@ -91,4 +91,4 @@ Before creating a tool, ask:
 - Is the task mechanical enough to automate?
 - Will the command be easier to run than another prompt?
 
-Thanks and source attribution to [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), [Prefect](https://www.prefect.io), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), [Prefect](https://www.prefect.io), and discussion from the webuild community.

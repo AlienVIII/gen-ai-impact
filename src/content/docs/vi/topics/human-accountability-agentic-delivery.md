@@ -160,4 +160,4 @@ Câu hỏi đáng thảo luận tiếp:
 - PR template cần thêm field accountability nào?
 - Khi incident xảy ra, team muốn audit agent usage ở mức nào?
 
-Cảm ơn và trích nguồn từ [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [Stack Overflow Developer Survey 2025](https://survey.stackoverflow.co/2025/ai), và discussion từ cộng đồng webuild.
+Nguồn và attribution cộng đồng: [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [Stack Overflow Developer Survey 2025](https://survey.stackoverflow.co/2025/ai), và discussion từ cộng đồng webuild.

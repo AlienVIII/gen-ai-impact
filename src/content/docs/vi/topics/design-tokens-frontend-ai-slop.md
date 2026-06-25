@@ -92,4 +92,4 @@ Trước khi accept AI frontend work, hỏi:
 - Style lặp lại đã thành component chưa?
 - Đã inspect screenshot thật chưa?
 
-Cảm ơn và trích nguồn từ [Tailwind CSS theme variables](https://tailwindcss.com/docs/theme), [Design Tokens Format Module](https://www.designtokens.org/TR/2025.10/format/), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [Tailwind CSS theme variables](https://tailwindcss.com/docs/theme), [Design Tokens Format Module](https://www.designtokens.org/TR/2025.10/format/), và discussion từ cộng đồng webuild.

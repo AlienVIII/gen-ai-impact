@@ -200,4 +200,4 @@ Questions worth discussing:
 - Which actions need non-negotiable human gates?
 - Which dependency policy should be automated first?
 
-Thanks and source attribution to [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [OpenSSF Scorecard](https://scorecard.dev/), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), and the webuild discussion.
+Sources and community attribution: [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [OpenSSF Scorecard](https://scorecard.dev/), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), and the webuild discussion.

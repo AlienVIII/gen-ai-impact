@@ -165,4 +165,4 @@ Questions worth discussing:
 - Which risks need owner approval before an agent starts?
 - Which rollbacks still depend on tribal knowledge?
 
-Thanks and source attribution to [DORA 2024](https://dora.dev/research/2024/dora-report/), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), and the webuild discussion.
+Sources and community attribution: [DORA 2024](https://dora.dev/research/2024/dora-report/), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), and the webuild discussion.

@@ -90,4 +90,4 @@ Trước khi report AI productivity metric, hỏi:
 - Nó có lộ maintainability risk dài hạn không?
 - Sau một incident, metric này còn nhìn tốt không?
 
-Cảm ơn và trích nguồn từ [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [HBR về AI-generated workslop](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [HBR về AI-generated workslop](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity), và discussion từ cộng đồng webuild.

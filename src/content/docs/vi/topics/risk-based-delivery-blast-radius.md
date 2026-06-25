@@ -165,4 +165,4 @@ Câu hỏi đáng thảo luận tiếp:
 - Risk nào cần owner approval trước khi agent bắt đầu?
 - Rollback nào hiện vẫn phụ thuộc vào tribal knowledge?
 
-Cảm ơn và trích nguồn từ [DORA 2024](https://dora.dev/research/2024/dora-report/), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), và discussion từ cộng đồng webuild.
+Nguồn và attribution cộng đồng: [DORA 2024](https://dora.dev/research/2024/dora-report/), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), và discussion từ cộng đồng webuild.

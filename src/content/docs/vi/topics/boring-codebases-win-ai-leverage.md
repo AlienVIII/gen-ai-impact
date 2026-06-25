@@ -184,4 +184,4 @@ Câu hỏi đáng thảo luận tiếp:
 - File nào quá lớn để agent sửa an toàn?
 - Refactor nhỏ nào giảm review cost nhiều nhất?
 
-Cảm ơn và trích nguồn từ [DORA](https://dora.dev/), [DORA 2024](https://dora.dev/research/2024/dora-report/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), và discussion từ cộng đồng webuild.
+Nguồn và attribution cộng đồng: [DORA](https://dora.dev/), [DORA 2024](https://dora.dev/research/2024/dora-report/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), và discussion từ cộng đồng webuild.

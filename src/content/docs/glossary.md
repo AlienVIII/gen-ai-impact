@@ -120,3 +120,11 @@ The explicit rule set that tells an agent which repositories are editable, which
 ## Design Tokens
 
 Named design decisions such as color, spacing, typography, and radius values that let tools and agents use a shared UI vocabulary.
+
+## Agent Mental Model
+
+A practical understanding of what an AI agent can see, infer, miss, and never own so humans know where to provide context, proof, and accountability.
+
+## Counterargument Gate
+
+A pre-implementation step where the agent must argue against its own recommendation, name weak assumptions, and define proof before editing starts.

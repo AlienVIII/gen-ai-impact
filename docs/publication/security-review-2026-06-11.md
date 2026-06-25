@@ -40,12 +40,12 @@ Reviewed public source content intended for publication:
 
 ## Follow-up Validation - 2026-06-16
 
-- Public topic set now contains twenty-one topics in English and Vietnamese under `src/content/docs/topics/` and `src/content/docs/vi/topics/`.
-- The topic set summarizes the draft into public-safe guidance on model pressure, eval-first optimization, context memory, personal distillation, agent workflow, session handoff, workslop specs, multi-repo workflow, design tokens, tokenless automation, AI metrics, forward-deployed engineering, agent tool evaluation, AI-assisted OSS contribution hygiene, and cognitive debt.
-- The previous public source-triage topic was replaced by a draft-derived session handoff topic; source triage remains an internal editorial practice, not a public topic.
+- Public topic set now contains twenty-three topics in English and Vietnamese under `src/content/docs/topics/` and `src/content/docs/vi/topics/`.
+- The topic set summarizes the draft into public-safe guidance on model pressure, eval-first optimization, context memory, personal distillation, agent workflow, session handoff, workslop specs, multi-repo workflow, design tokens, tokenless automation, AI metrics, forward-deployed engineering, agent tool evaluation, AI-assisted OSS contribution hygiene, cognitive debt, agent mental models, and counterargument-first brainstorming.
+- The previous public editorial-method topic was replaced by a draft-derived session handoff topic; citation triage remains an internal editorial practice, not a public topic.
 - Raw draft text, local draft images, screenshots, private chat details, and the untracked PDF remain outside the public content tree.
 - Each topic ends with source attribution or community attribution.
-- `npm run build` generated 53 pages and a sitemap.
+- `npm run build` generated 57 pages and a sitemap.
 - `npm audit --omit=dev` reported `found 0 vulnerabilities`.
 - `bun install --frozen-lockfile` completed successfully with the updated lockfile.
 - Output scans found no draft routes, local filesystem paths, legacy `/guidelines` or `/versions` routes, raw draft image references, PDF filename references, or credential-like patterns.

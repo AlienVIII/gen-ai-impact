@@ -133,4 +133,4 @@ Before accepting an AI optimization, ask:
 
 If the answer is mostly prose, the change is not ready.
 
-Thanks and source attribution to the [DORA 2025 State of AI-assisted Software Development report](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [Martin Fowler's Future of Software Development notes](https://martinfowler.com/fragments/2026-02-18.html), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: the [DORA 2025 State of AI-assisted Software Development report](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [Martin Fowler's Future of Software Development notes](https://martinfowler.com/fragments/2026-02-18.html), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), and discussion from the webuild community.

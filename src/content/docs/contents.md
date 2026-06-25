@@ -28,6 +28,8 @@ Use this page as the public table of contents for published topics.
 - [19. Tool Hype: Evaluate Agent Harnesses, Not Stars](../topics/tool-hype-and-agent-harness-evaluation/)
 - [20. AI-generated OSS Contributions Need Human Ownership](../topics/ai-generated-open-source-contributions/)
 - [21. Cognitive Debt: Keep The Human Skill Alive](../topics/cognitive-debt-and-joy-of-coding/)
+- [22. Understand The Agent: What AI Can See, Miss, And Cannot Own](../topics/understanding-ai-agent-mental-model/)
+- [23. Brainstorm Before Build: Make AI Argue Before It Acts](../topics/brainstorm-before-build-ai-counterarguments/)
 
 ## Reference
 

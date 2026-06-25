@@ -114,4 +114,4 @@ Before starting a new AI session, ask:
 
 If the answer is "paste the whole chat", the memory system is missing.
 
-Thanks and source attribution to [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: [AGENTS.md](https://agents.md/), [OpenAI Codex AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md), [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), and discussion from the webuild community.

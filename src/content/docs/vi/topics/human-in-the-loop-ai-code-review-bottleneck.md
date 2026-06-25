@@ -204,4 +204,4 @@ Câu hỏi đáng thảo luận tiếp:
 - Critical path nào vẫn bắt buộc human review 100%?
 - Môi trường nào còn manual khiến agent không thể tự prove work?
 
-Cảm ơn và trích nguồn từ anh Gopher và các thành viên webuild.
+Nguồn và attribution cộng đồng: cộng đồng webuild.

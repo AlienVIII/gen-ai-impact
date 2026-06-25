@@ -233,4 +233,4 @@ Câu hỏi đáng thảo luận tiếp:
 - Permission nào agent đang có nhưng task không cần?
 - Rule nào đang nằm trong prompt nhưng nên thành script hoặc CI check?
 
-Cảm ơn và trích nguồn từ [Stack Overflow Developer Survey 2025](https://survey.stackoverflow.co/2025/ai), [GitHub Octoverse 2025](https://octoverse.github.com/), [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), và discussion từ cộng đồng webuild.
+Nguồn và attribution cộng đồng: [Stack Overflow Developer Survey 2025](https://survey.stackoverflow.co/2025/ai), [GitHub Octoverse 2025](https://octoverse.github.com/), [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/), [OpenSSF AI code assistant guidance](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), và discussion từ cộng đồng webuild.

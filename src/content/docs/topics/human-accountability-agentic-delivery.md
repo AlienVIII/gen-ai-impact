@@ -160,4 +160,4 @@ Questions worth discussing:
 - Which accountability fields belong in the PR template?
 - When an incident happens, how much agent usage should be auditable?
 
-Thanks and source attribution to [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [Stack Overflow Developer Survey 2025](https://survey.stackoverflow.co/2025/ai), and the webuild discussion.
+Sources and community attribution: [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST SSDF](https://csrc.nist.gov/projects/ssdf), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), [Stack Overflow Developer Survey 2025](https://survey.stackoverflow.co/2025/ai), and the webuild discussion.

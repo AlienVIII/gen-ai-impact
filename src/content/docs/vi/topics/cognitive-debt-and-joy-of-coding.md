@@ -119,4 +119,4 @@ Cho team:
 
 Nếu AI use tăng speed nhưng giảm understanding, team đang vay mượn từ judgment tương lai.
 
-Cảm ơn và trích nguồn từ [AI Assistance Reduces Persistence and Hurts Independent Performance](https://arxiv.org/html/2604.04721v2), [ghi chú Future of Software Development của Martin Fowler](https://martinfowler.com/fragments/2026-02-18.html), [DORA 2025 State of AI-assisted Software Development report](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [AI Assistance Reduces Persistence and Hurts Independent Performance](https://arxiv.org/html/2604.04721v2), [ghi chú Future of Software Development của Martin Fowler](https://martinfowler.com/fragments/2026-02-18.html), [DORA 2025 State of AI-assisted Software Development report](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), và discussion từ cộng đồng webuild.

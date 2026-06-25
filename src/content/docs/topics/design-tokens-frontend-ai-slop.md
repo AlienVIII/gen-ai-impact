@@ -92,4 +92,4 @@ Before accepting AI frontend work, ask:
 - Are repeated styles captured as components?
 - Did someone inspect a real screenshot?
 
-Thanks and source attribution to [Tailwind CSS theme variables](https://tailwindcss.com/docs/theme), the [Design Tokens Format Module](https://www.designtokens.org/TR/2025.10/format/), and the discussion from anh Gopher and the webuild community.
+Sources and community attribution: [Tailwind CSS theme variables](https://tailwindcss.com/docs/theme), the [Design Tokens Format Module](https://www.designtokens.org/TR/2025.10/format/), and discussion from the webuild community.

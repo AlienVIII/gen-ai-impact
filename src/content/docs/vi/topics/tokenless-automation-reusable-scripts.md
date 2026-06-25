@@ -91,4 +91,4 @@ Trước khi tạo tool, hỏi:
 - Task có đủ mechanical để automate không?
 - Command có dễ chạy hơn prompt lần nữa không?
 
-Cảm ơn và trích nguồn từ [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), [Prefect](https://www.prefect.io), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [12-Factor Agents](https://github.com/humanlayer/12-factor-agents), [Prefect](https://www.prefect.io), và discussion từ cộng đồng webuild.

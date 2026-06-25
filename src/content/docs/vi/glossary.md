@@ -120,3 +120,11 @@ Rule set explicit nói repo nào được edit, repo nào chỉ là read-only co
 ## Design Tokens
 
 Các design decision được đặt tên như color, spacing, typography, radius để tool và agent dùng chung một UI vocabulary.
+
+## Agent Mental Model
+
+Hiểu biết thực dụng về AI agent thấy gì, infer gì, miss gì, và không bao giờ được own gì để human biết chỗ nào cần đưa context, proof, và accountability.
+
+## Counterargument Gate
+
+Bước trước implementation nơi agent phải phản biện recommendation của chính nó, nêu weak assumptions, và định nghĩa proof trước khi bắt đầu edit.

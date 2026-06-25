@@ -96,4 +96,4 @@ Trước khi đưa spec cho engineering, hỏi:
 - Ai own unresolved questions?
 - Teammate có estimate được mà không cần meeting không?
 
-Cảm ơn và trích nguồn từ [HBR về AI-generated workslop](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), và discussion từ anh Gopher cùng cộng đồng webuild.
+Nguồn và attribution cộng đồng: [HBR về AI-generated workslop](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity), [DORA 2025 State of AI-assisted Software Development](https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report), và discussion từ cộng đồng webuild.
