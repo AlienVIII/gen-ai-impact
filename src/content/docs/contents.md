@@ -30,6 +30,11 @@ Use this page as the public table of contents for published topics.
 - [21. Cognitive Debt: Keep The Human Skill Alive](../topics/cognitive-debt-and-joy-of-coding/)
 - [22. Understand The Agent: What AI Can See, Miss, And Cannot Own](../topics/understanding-ai-agent-mental-model/)
 - [23. Brainstorm Before Build: Make AI Argue Before It Acts](../topics/brainstorm-before-build-ai-counterarguments/)
+- [24. Agent Review Harness: Make AI Review Useful, Not Authoritative](../topics/agent-review-harness/)
+- [25. Learning With AI Without Brainrot: Keep The Struggle, Shorten The Search](../topics/learning-with-ai-without-brainrot/)
+- [26. Spec Repository: Make The Source Of Truth Visible To Agents](../topics/spec-repository-source-of-truth/)
+- [27. Agent Cost Control: Budget The Loop, Not Just The Model](../topics/agent-cost-control/)
+- [28. Prompt Loop, Not Prompt: Turn Good Instructions Into A System](../topics/prompt-loop-not-prompt/)
 
 ## Reference
 

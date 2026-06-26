@@ -30,6 +30,11 @@ Trang này là mục lục public cho các topic đã publish.
 - [21. Cognitive debt: Giữ skill của human còn sống](../topics/cognitive-debt-and-joy-of-coding/)
 - [22. Hiểu agent: AI thấy gì, miss gì, và không được own gì](../topics/understanding-ai-agent-mental-model/)
 - [23. Brainstorm trước khi build: Bắt AI phản biện trước khi làm](../topics/brainstorm-before-build-ai-counterarguments/)
+- [24. Agent review harness: Dùng AI review để tạo signal, không trao quyền phán quyết](../topics/agent-review-harness/)
+- [25. Học với AI mà không brainrot: Giữ struggle, rút ngắn search](../topics/learning-with-ai-without-brainrot/)
+- [26. Spec repository: Làm source of truth visible cho agent](../topics/spec-repository-source-of-truth/)
+- [27. Agent cost control: Budget loop, không chỉ model](../topics/agent-cost-control/)
+- [28. Prompt loop, không chỉ prompt: Biến instruction tốt thành system](../topics/prompt-loop-not-prompt/)
 
 ## Tham khảo
 

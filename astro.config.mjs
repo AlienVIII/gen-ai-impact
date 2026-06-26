@@ -166,6 +166,31 @@ export default defineConfig({
 							translations: { vi: '23. Brainstorm trước khi build: Bắt AI phản biện trước khi làm' },
 							slug: 'topics/brainstorm-before-build-ai-counterarguments',
 						},
+						{
+							label: '24. Agent Review Harness: Make AI Review Useful, Not Authoritative',
+							translations: { vi: '24. Agent review harness: Dùng AI review để tạo signal, không trao quyền phán quyết' },
+							slug: 'topics/agent-review-harness',
+						},
+						{
+							label: '25. Learning With AI Without Brainrot: Keep The Struggle, Shorten The Search',
+							translations: { vi: '25. Học với AI mà không brainrot: Giữ struggle, rút ngắn search' },
+							slug: 'topics/learning-with-ai-without-brainrot',
+						},
+						{
+							label: '26. Spec Repository: Make The Source Of Truth Visible To Agents',
+							translations: { vi: '26. Spec repository: Làm source of truth visible cho agent' },
+							slug: 'topics/spec-repository-source-of-truth',
+						},
+						{
+							label: '27. Agent Cost Control: Budget The Loop, Not Just The Model',
+							translations: { vi: '27. Agent cost control: Budget loop, không chỉ model' },
+							slug: 'topics/agent-cost-control',
+						},
+						{
+							label: '28. Prompt Loop, Not Prompt: Turn Good Instructions Into A System',
+							translations: { vi: '28. Prompt loop, không chỉ prompt: Biến instruction tốt thành system' },
+							slug: 'topics/prompt-loop-not-prompt',
+						},
 					],
 				},
 				{

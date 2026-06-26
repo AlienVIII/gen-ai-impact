@@ -50,6 +50,16 @@ Reviewed public source content intended for publication:
 - `bun install --frozen-lockfile` completed successfully with the updated lockfile.
 - Output scans found no draft routes, local filesystem paths, legacy `/guidelines` or `/versions` routes, raw draft image references, PDF filename references, or credential-like patterns.
 
+## Follow-up Validation - 2026-06-26
+
+- Public topic set now contains twenty-eight topics in English and Vietnamese under `src/content/docs/topics/` and `src/content/docs/vi/topics/`.
+- The added topics cover AI review harnesses, learning with AI without cognitive over-delegation, spec repositories as agent-visible source of truth, agent cost control, and prompt loops as repeatable systems.
+- New content remains public-safe: no raw draft text, private names, local paths, draft screenshots, internal chat links, secrets, or unsanitized logs were added.
+- Each topic ends with source attribution or community attribution.
+- `npm run build` generated 67 pages and a sitemap.
+- `npm audit --omit=dev` reported `found 0 vulnerabilities`.
+- Output scans found no draft routes, local filesystem paths, legacy `/guidelines` or `/versions` routes, raw draft image references, PDF filename references, removed attribution names, or credential-like patterns.
+
 ## Publication Rules
 
 - Publish only content under `src/content/docs/**`.

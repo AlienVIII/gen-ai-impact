@@ -128,3 +128,23 @@ Hiểu biết thực dụng về AI agent thấy gì, infer gì, miss gì, và k
 ## Counterargument Gate
 
 Bước trước implementation nơi agent phải phản biện recommendation của chính nó, nêu weak assumptions, và định nghĩa proof trước khi bắt đầu edit.
+
+## Agent Review Harness
+
+Review setup nơi AI kiểm tra scope, risk, tests, artifacts, và failure patterns phổ biến, nhưng không thay human reviewer trong quyết định merge.
+
+## Learning Loop
+
+Cách dùng AI có chủ đích khi học: hỏi map, tự recall, xin hint có giới hạn, build artifact nhỏ, rồi tự summarize lại từ trí nhớ.
+
+## Spec Repository
+
+Source of truth được maintain cho specs, decisions, workflows, và agent-facing context. Nó có thể nằm cạnh code hoặc trong repo riêng, nhưng phải versioned và reviewable.
+
+## Agent Cost Budget
+
+Giới hạn theo task cho model spend, tool calls, runtime, retries, và human review time. Budget tốt có stop condition, không chỉ chọn model rẻ hơn.
+
+## Prompt Loop
+
+System lặp lại quanh prompt gồm state, tools, checks, feedback, và stop condition để instruction tốt sống được lâu hơn một chat.

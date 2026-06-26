@@ -128,3 +128,23 @@ A practical understanding of what an AI agent can see, infer, miss, and never ow
 ## Counterargument Gate
 
 A pre-implementation step where the agent must argue against its own recommendation, name weak assumptions, and define proof before editing starts.
+
+## Agent Review Harness
+
+A review setup where AI checks scope, risk, tests, artifacts, and common failure patterns, but does not replace the human reviewer responsible for merge judgment.
+
+## Learning Loop
+
+A deliberate way to use AI while studying: ask for a map, attempt recall, request targeted hints, build a small artifact, then summarize from memory.
+
+## Spec Repository
+
+A maintained source of truth for specs, decisions, workflows, and agent-facing context. It can live beside code or in a separate repository, but it must remain versioned and reviewable.
+
+## Agent Cost Budget
+
+A task-level limit for model spend, tool calls, runtime, retries, and human review time. Good budgets include stop conditions, not just cheaper models.
+
+## Prompt Loop
+
+A repeatable system around prompts that includes state, tools, checks, feedback, and stop conditions so useful instructions can survive beyond one chat.
