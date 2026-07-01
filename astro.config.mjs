@@ -191,6 +191,11 @@ export default defineConfig({
 							translations: { vi: '28. Prompt loop, không chỉ prompt: Biến instruction tốt thành system' },
 							slug: 'topics/prompt-loop-not-prompt',
 						},
+						{
+							label: '29. Vibe Coding: Prototype Fast, Engineer Before Public',
+							translations: { vi: '29. Vibe coding: Prototype nhanh, public thì phải engineer' },
+							slug: 'topics/vibe-coding-prototype-to-production',
+						},
 					],
 				},
 				{

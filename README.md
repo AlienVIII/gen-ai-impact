@@ -4,6 +4,51 @@ Topic documentation site for generative AI impact notes and operating rules.
 
 Built with [Astro Starlight](https://starlight.astro.build/).
 
+## Requirements
+
+- Node.js 24 for parity with GitHub Actions.
+- npm for the canonical install and lockfile.
+- Bun is optional; `bun.lock` is kept in sync only because it is already tracked.
+
+## Install And Run
+
+Run these commands from the repository root.
+
+1. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+2. Start the local Starlight dev server:
+
+   ```sh
+   npm run dev
+   ```
+
+   Open `http://localhost:4321/gen-ai-impact/` if Astro serves with the configured base path. If the dev server redirects to another local URL, use the URL printed by Astro.
+
+3. Build the production site:
+
+   ```sh
+   npm run build
+   ```
+
+4. Preview the production build:
+
+   ```sh
+   npm run preview
+   ```
+
+5. Check dependencies and vulnerabilities before publishing:
+
+   ```sh
+   npm outdated
+   npm audit --omit=dev
+   ```
+
+If dependencies change, run `npm install` and commit both `package.json` and `package-lock.json`. If `bun.lock` changes are expected, run `bun install` once to keep the secondary lockfile aligned.
+
 ## Content Workflow
 
 - Use root `draft.md` as the current local authoring scratchpad.
@@ -81,11 +126,14 @@ One-time GitHub setup:
 
 Run from the repository root.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command                   | Action                                                 |
+| :------------------------ | :----------------------------------------------------- |
+| `npm install`             | Install dependencies and update `package-lock.json`    |
+| `npm run dev`             | Start local dev server                                 |
+| `npm run build`           | Build the production site to `./dist/`                 |
+| `npm run preview`         | Preview the production build locally                   |
+| `npm outdated`            | Check whether dependencies have newer versions         |
+| `npm audit --omit=dev`    | Check production dependency vulnerability reports      |
+| `bun install`             | Optional: sync `bun.lock` after dependency changes     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`       |
+| `npm run astro -- --help` | Get help using the Astro CLI                           |

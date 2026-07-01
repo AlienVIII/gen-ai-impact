@@ -35,6 +35,7 @@ Trang này là mục lục public cho các topic đã publish.
 - [26. Spec repository: Làm source of truth visible cho agent](../topics/spec-repository-source-of-truth/)
 - [27. Agent cost control: Budget loop, không chỉ model](../topics/agent-cost-control/)
 - [28. Prompt loop, không chỉ prompt: Biến instruction tốt thành system](../topics/prompt-loop-not-prompt/)
+- [29. Vibe coding: Prototype nhanh, public thì phải engineer](../topics/vibe-coding-prototype-to-production/)
 
 ## Tham khảo
 

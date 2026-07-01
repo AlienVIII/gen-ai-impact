@@ -148,3 +148,7 @@ A task-level limit for model spend, tool calls, runtime, retries, and human revi
 ## Prompt Loop
 
 A repeatable system around prompts that includes state, tools, checks, feedback, and stop conditions so useful instructions can survive beyond one chat.
+
+## Vibe Coding
+
+A low-stakes AI-assisted coding mode where the human optimizes for momentum and visible feedback instead of full code comprehension. It is useful for prototypes and learning, but it must switch to engineering mode before public or production use.

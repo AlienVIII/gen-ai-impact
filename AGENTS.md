@@ -17,12 +17,14 @@
 - Keep internal draft/history notes outside `src/content/docs/`; rely on Git diff for line-level change history.
 - Deploy target is GitHub Pages at `https://alienviii.github.io/gen-ai-impact/`.
 - GitHub Pages should use GitHub Actions with `.github/workflows/deploy.yml`, Node `24`, npm, and production branch `main`.
+- Use npm as the canonical package manager. After dependency changes, update `package-lock.json` with `npm install`; if `bun.lock` is kept, run `bun install` once so the secondary lockfile does not drift.
 - Because this is a GitHub project site, keep `site: 'https://alienviii.github.io'` and `base: '/gen-ai-impact'` in `astro.config.mjs` unless a custom domain is added.
 - Avoid root-absolute internal links such as `/vi/...`; use relative links so deploy targets with or without subpaths stay valid.
 - Before claiming completion, run `npm run build`.
 
 ## Commands
 
+- `npm install`: install dependencies and update `package-lock.json`.
 - `npm run dev`: local development server.
 - `npm run build`: production build and content validation.
 - `npm run preview`: preview built output locally.

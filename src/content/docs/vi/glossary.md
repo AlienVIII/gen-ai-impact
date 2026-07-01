@@ -148,3 +148,7 @@ Giới hạn theo task cho model spend, tool calls, runtime, retries, và human 
 ## Prompt Loop
 
 System lặp lại quanh prompt gồm state, tools, checks, feedback, và stop condition để instruction tốt sống được lâu hơn một chat.
+
+## Vibe Coding
+
+Mode coding với AI có low stakes, nơi human ưu tiên momentum và visible feedback hơn full code comprehension. Nó hữu ích cho prototype và learning, nhưng phải chuyển sang engineering mode trước khi public hoặc production.

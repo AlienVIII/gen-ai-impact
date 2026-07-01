@@ -35,6 +35,7 @@ Use this page as the public table of contents for published topics.
 - [26. Spec Repository: Make The Source Of Truth Visible To Agents](../topics/spec-repository-source-of-truth/)
 - [27. Agent Cost Control: Budget The Loop, Not Just The Model](../topics/agent-cost-control/)
 - [28. Prompt Loop, Not Prompt: Turn Good Instructions Into A System](../topics/prompt-loop-not-prompt/)
+- [29. Vibe Coding: Prototype Fast, Engineer Before Public](../topics/vibe-coding-prototype-to-production/)
 
 ## Reference
 

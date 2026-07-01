@@ -60,6 +60,25 @@ Reviewed public source content intended for publication:
 - `npm audit --omit=dev` reported `found 0 vulnerabilities`.
 - Output scans found no draft routes, local filesystem paths, legacy `/guidelines` or `/versions` routes, raw draft image references, PDF filename references, removed attribution names, or credential-like patterns.
 
+## Follow-up Validation - 2026-06-29
+
+- Public topic set now contains twenty-nine topics in English and Vietnamese under `src/content/docs/topics/` and `src/content/docs/vi/topics/`.
+- The added topic covers vibe coding as a prototype mode, the switch to production engineering, and explicit overlaps with existing learning, cognitive debt, agent workflow, review harness, security boundary, and cost-control topics.
+- New content remains public-safe: no raw draft text, private names, local paths, draft screenshots, internal chat links, secrets, or unsanitized logs were added.
+- Each topic ends with source attribution or community attribution.
+- `npm run build` generated 69 pages and a sitemap.
+- Output scans found no draft routes, local filesystem paths, legacy `/guidelines` or `/versions` routes, raw draft image references, PDF filename references, removed attribution names, or credential-like patterns.
+
+## Follow-up Validation - 2026-07-01
+
+- Upgraded public site dependencies to Astro 7, Starlight 0.41, Sharp 0.35, and Vite 8 override through npm.
+- Refreshed `package-lock.json` and `bun.lock`; npm remains the canonical package manager for CI/CD.
+- README and project instructions now include install, run, build, preview, dependency check, and lockfile-sync steps.
+- `npm outdated --json` reported no outdated direct dependencies.
+- `npm audit --omit=dev` reported `found 0 vulnerabilities`.
+- `npm run build` generated 69 pages and a sitemap.
+- Output scans found no draft routes, local filesystem paths, legacy `/guidelines` or `/versions` routes, raw draft image references, PDF filename references, removed attribution names, or credential-like patterns.
+
 ## Publication Rules
 
 - Publish only content under `src/content/docs/**`.
